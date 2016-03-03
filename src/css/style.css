@@ -265,3 +265,37 @@ footer {
 .news-letter button:focus {
   outline: none;
 }
+
+/* line 3, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
+.content .content-item {
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  background-color: red;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 3, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
+  .content .content-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* line 18, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_img img {
+  text-align: center;
+  width: 50%;
+}
+
+/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_text {
+  font-weight: 300;
+}
+
+/* line 27, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_text .content-item_text--title {
+  padding-top: 4%;
+}
