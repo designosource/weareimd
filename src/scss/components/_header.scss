@@ -46,6 +46,7 @@
 		background-color: transparent;
 		border-bottom: 1px solid transparent;
 	    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+	    text-shadow: 1px 1px 30px rgb(19, 19, 19);
 
 		width: 100%;
 		line-height: 50px;
@@ -53,6 +54,14 @@
 		.logo {
 			margin: 10px 0;
 			max-height: 30px;
+
+			&.black {
+				display: none;
+			}
+
+			&.white {
+				display: block;
+			}
 		}
 
 		.horizontal-nav {
@@ -70,12 +79,23 @@
 		&.background {
 			background-color: #FFF;
 			border-color: #F9F9F9;
+			text-shadow: none;
 
 			.horizontal-nav {
 				.nav-item {
 					a { 
 						color: #333;
 					}
+				}
+			}
+
+			.logo {
+				&.black {
+					display: block;
+				}
+
+				&.white {
+					display: none;
 				}
 			}
 		}
@@ -88,7 +108,6 @@
 	    text-transform: uppercase;
 	    color: #FFF;
 	    font-size: 47px;
-        text-shadow: 1px 1px 30px rgb(19, 19, 19);
         line-height: 55px;
 
 	    span {
