@@ -63,3 +63,33 @@ body {
 .page-header .header-bar .nav .nav-item {
   padding-right: 15px;
 }
+
+/* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter input[type="text"] {
+  display: block;
+  margin: 15px auto;
+  width: 500px;
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #BBBBBB;
+}
+
+/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  border-top: 1px solid #BBBBBB;
+  width: 150px;
+  font-size: 18px;
+  color: #ABABAB;
+}
+
+/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:focus {
+  outline: none;
+}

@@ -1,0 +1,28 @@
+.news-letter {
+	input[type="text"] {
+		display: block;
+		margin: 15px auto;
+		width: 500px;
+		padding: 5px;
+		text-align: center;
+		font-size: 18px;
+		border: none;
+		border-bottom: 1px solid #BBBBBB;
+	}
+
+	button {
+		display: block;
+		margin: 0 auto;
+		padding: 8px;
+		background: transparent;
+		border: none;
+		border-top: 1px solid #BBBBBB;
+		width: 150px;
+		font-size: 18px;
+		color: #ABABAB;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
