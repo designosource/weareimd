@@ -1,43 +1,43 @@
 /* Vars */
 /* animations */
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/animations/_my-first-animation.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/animations/_my-first-animation.scss */
 .trololo {
   display: none;
 }
 
 /* components */
-/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_main.scss */
+/* line 5, C:/Users/Sara/weareimd/src/scss/components/_main.scss */
 body {
   font-size: 16px;
   font-weight: 500;
   font: Roboto;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content {
   padding: 50px 0;
 }
 
-/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 4, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item {
   padding: 50px 0;
 }
 
-/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 8, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered img {
   display: block;
   margin: 25px auto;
   max-width: 300px;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 13, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered p {
   margin: 0 auto;
   max-width: 500px;
   text-align: center;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ body {
   background-size: cover;
 }
 
-/* line 12, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 12, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar {
   position: fixed;
   top: 0;
@@ -60,18 +60,18 @@ body {
   line-height: 50px;
 }
 
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 24, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .nav .nav-item {
   padding-right: 15px;
 }
 
-/* line 29, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 29, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
 }
 
-/* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 2, C:/Users/Sara/weareimd/src/scss/components/_form.scss */
 .news-letter input[type="text"] {
   display: block;
   margin: 15px auto;
@@ -83,7 +83,7 @@ body {
   border-bottom: 1px solid #BBBBBB;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 13, C:/Users/Sara/weareimd/src/scss/components/_form.scss */
 .news-letter button {
   display: block;
   margin: 0 auto;
@@ -96,7 +96,7 @@ body {
   color: #ABABAB;
 }
 
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 24, C:/Users/Sara/weareimd/src/scss/components/_form.scss */
 .news-letter button:focus {
   outline: none;
 }
