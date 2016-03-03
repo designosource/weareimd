@@ -13,6 +13,12 @@ body {
   font-family: roboto;
 }
 
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_footer.scss */
+footer {
+  padding: 15px;
+  text-align: center;
+}
+
 /* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content {
   padding: 50px 0;
@@ -53,12 +59,14 @@ body {
   padding: 50px 0 0 0;
   position: relative;
   width: 100%;
+  max-height: 100vh;
   overflow: hidden;
+  text-shadow: 1px 1px 30px #131313;
   background-position: center;
   background-size: cover;
 }
 
-/* line 12, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header video {
   position: absolute;
   top: 50%;
@@ -78,7 +86,7 @@ body {
           filter: grayscale(100%);
 }
 
-/* line 31, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 33, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .overlay {
   position: absolute;
   top: 0;
@@ -89,7 +97,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 42, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 44, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar {
   position: fixed;
   top: 0;
@@ -97,66 +105,65 @@ body {
   background-color: transparent;
   border-bottom: 1px solid transparent;
   transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
-  text-shadow: 1px 1px 30px #131313;
   width: 100%;
   line-height: 50px;
 }
 
-/* line 54, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 55, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo {
   margin: 10px 0;
   max-height: 30px;
 }
 
-/* line 58, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 59, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo.black {
   display: none;
 }
 
-/* line 62, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 63, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo.white {
   display: block;
 }
 
-/* line 67, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 68, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav {
   list-style-type: none;
 }
 
-/* line 69, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 70, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item {
   font-size: 18px;
-  padding-right: 25px;
+  padding-right: 35px;
 }
 
-/* line 73, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 74, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item a {
   color: #FFF;
 }
 
-/* line 79, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 80, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
   text-shadow: none;
 }
 
-/* line 86, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 87, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .horizontal-nav .nav-item a {
   color: #333;
 }
 
-/* line 93, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 94, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .logo.black {
   display: block;
 }
 
-/* line 97, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 98, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .logo.white {
   display: none;
 }
 
-/* line 104, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 105, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote {
   width: 460px;
   padding: 25vh 0px;
@@ -167,13 +174,13 @@ body {
   line-height: 55px;
 }
 
-/* line 113, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 114, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote span {
   font-weight: 500;
   display: block;
 }
 
-/* line 119, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 120, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote-author {
   text-align: center;
   color: #FFF;
@@ -182,7 +189,7 @@ body {
   padding: 30vh 0px;
 }
 
-/* line 126, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 127, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote-author span {
   display: block;
   font-weight: 300;
