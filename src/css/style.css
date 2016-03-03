@@ -1,59 +1,59 @@
 /* Vars */
 /* animations */
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/animations/_my-first-animation.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/animations/_my-first-animation.scss */
 .trololo {
   display: none;
 }
 
 /* components */
-/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_main.scss */
+/* line 5, C:/Users/Sara/weareimd/src/scss/components/_main.scss */
 body {
   font-size: 16px;
   font-weight: 500;
   font-family: roboto;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_footer.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/components/_footer.scss */
 footer {
   padding: 15px;
   text-align: center;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content {
   padding: 50px 0;
 }
 
-/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 4, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item {
   padding: 50px 0;
 }
 
-/* line 7, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 7, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item h3 {
   font-size: 48px;
   font-weight: 300;
 }
 
-/* line 12, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 12, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered {
   text-align: center;
 }
 
-/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 14, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered img {
   display: block;
   margin: 25px auto;
   max-width: 300px;
 }
 
-/* line 19, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 19, C:/Users/Sara/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered p {
   margin: 0 auto;
   max-width: 500px;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 1, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header {
   margin: 0;
   padding: 50px 0 0 0;
@@ -66,7 +66,7 @@ footer {
   background-size: cover;
 }
 
-/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 14, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header video {
   position: absolute;
   top: 50%;
@@ -86,7 +86,7 @@ footer {
           filter: grayscale(100%);
 }
 
-/* line 33, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 33, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .overlay {
   position: absolute;
   top: 0;
@@ -97,7 +97,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 44, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 44, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar {
   position: fixed;
   top: 0;
@@ -109,61 +109,61 @@ footer {
   line-height: 50px;
 }
 
-/* line 55, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 55, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo {
   margin: 10px 0;
   max-height: 30px;
 }
 
-/* line 59, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 59, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo.black {
   display: none;
 }
 
-/* line 63, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 63, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo.white {
   display: block;
 }
 
-/* line 68, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 68, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav {
   list-style-type: none;
 }
 
-/* line 70, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 70, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item {
   font-size: 18px;
   padding-right: 35px;
 }
 
-/* line 74, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 74, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item a {
   color: #FFF;
 }
 
-/* line 80, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 80, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
   text-shadow: none;
 }
 
-/* line 87, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 87, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .horizontal-nav .nav-item a {
   color: #333;
 }
 
-/* line 94, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 94, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .logo.black {
   display: block;
 }
 
-/* line 98, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 98, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .logo.white {
   display: none;
 }
 
-/* line 105, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 105, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .quote {
   width: 460px;
   padding: 25vh 0px;
@@ -174,13 +174,13 @@ footer {
   line-height: 55px;
 }
 
-/* line 114, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 114, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .quote span {
   font-weight: 500;
   display: block;
 }
 
-/* line 120, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 120, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .quote-author {
   text-align: center;
   color: #FFF;
@@ -189,14 +189,14 @@ footer {
   padding: 30vh 0px;
 }
 
-/* line 127, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 127, C:/Users/Sara/weareimd/src/scss/components/_header.scss */
 .page-header .quote-author span {
   display: block;
   font-weight: 300;
   font-size: 14px;
 }
 
-/* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 2, C:/Users/Sara/weareimd/src/scss/components/_form.scss */
 .news-letter input[type="text"] {
   display: block;
   margin: 15px auto;
@@ -208,7 +208,7 @@ footer {
   border-bottom: 1px solid #BBBBBB;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 13, C:/Users/Sara/weareimd/src/scss/components/_form.scss */
 .news-letter button {
   display: block;
   margin: 0 auto;
@@ -221,7 +221,41 @@ footer {
   color: #ABABAB;
 }
 
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 24, C:/Users/Sara/weareimd/src/scss/components/_form.scss */
 .news-letter button:focus {
   outline: none;
+}
+
+/* line 3, C:/Users/Sara/weareimd/src/scss/components/_b-content.scss */
+.content .content-item {
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  background-color: red;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 3, C:/Users/Sara/weareimd/src/scss/components/_b-content.scss */
+  .content .content-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* line 18, C:/Users/Sara/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_img img {
+  text-align: center;
+  width: 50%;
+}
+
+/* line 24, C:/Users/Sara/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_text {
+  font-weight: 300;
+}
+
+/* line 27, C:/Users/Sara/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_text .content-item_text--title {
+  padding-top: 4%;
 }
