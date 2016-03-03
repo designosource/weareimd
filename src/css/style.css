@@ -53,13 +53,13 @@ body {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #FFF;
-  border-bottom: 1px solid #F9F9F9;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in;
   width: 100%;
   line-height: 50px;
 }
 
-/* line 23, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .nav .nav-item {
   padding-right: 15px;
 }
