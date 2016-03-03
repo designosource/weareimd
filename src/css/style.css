@@ -1,43 +1,122 @@
 /* Vars */
 /* animations */
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/animations/_my-first-animation.scss */
+/* line 1, D:/School/designosource/weareimd/src/scss/animations/_my-first-animation.scss */
 .trololo {
   display: none;
 }
 
+/* line 1, D:/School/designosource/weareimd/src/scss/animations/_cirkelanimate.scss */
+button.designmore {
+  position: relative;
+  width: 175px;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  background-image: url("../img/more.svg");
+  background-repeat: no-repeat;
+  line-height: 50px;
+}
+
+/* line 11, D:/School/designosource/weareimd/src/scss/animations/_cirkelanimate.scss */
+button.designmore img {
+  position: absolute;
+  width: 25px;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-5px, 5.5px);
+      -ms-transform: translate(-5px, 5.5px);
+          transform: translate(-5px, 5.5px);
+  -webkit-animation: bolanimate 1s forwards;
+          animation: bolanimate 1s forwards;
+}
+
+/* line 24, D:/School/designosource/weareimd/src/scss/animations/_cirkelanimate.scss */
+button.designmore:hover img {
+  width: 35px;
+  -webkit-transform: translate(-10px, 10.5px);
+      -ms-transform: translate(-10px, 10.5px);
+          transform: translate(-10px, 10.5px);
+}
+
+@-webkit-keyframes bolanimate {
+  0% {
+    -webkit-transform: translate(-5px, 5.5pxpx);
+            transform: translate(-5px, 5.5pxpx);
+  }
+  25% {
+    -webkit-transform: translate(-5px, -40px);
+            transform: translate(-5px, -40px);
+  }
+  30% {
+    -webkit-transform: translate(175px, -40px);
+            transform: translate(175px, -40px);
+  }
+  45% {
+    -webkit-transform: translate(175px, 5.5px);
+            transform: translate(175px, 5.5px);
+  }
+  100% {
+    -webkit-transform: translate(-5px, 5.5pxpx);
+            transform: translate(-5px, 5.5pxpx);
+  }
+}
+
+@keyframes bolanimate {
+  0% {
+    -webkit-transform: translate(-5px, 5.5pxpx);
+            transform: translate(-5px, 5.5pxpx);
+  }
+  25% {
+    -webkit-transform: translate(-5px, -40px);
+            transform: translate(-5px, -40px);
+  }
+  30% {
+    -webkit-transform: translate(175px, -40px);
+            transform: translate(175px, -40px);
+  }
+  45% {
+    -webkit-transform: translate(175px, 5.5px);
+            transform: translate(175px, 5.5px);
+  }
+  100% {
+    -webkit-transform: translate(-5px, 5.5pxpx);
+            transform: translate(-5px, 5.5pxpx);
+  }
+}
+
 /* components */
-/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_main.scss */
+/* line 5, D:/School/designosource/weareimd/src/scss/components/_main.scss */
 body {
   font-size: 16px;
   font-weight: 500;
   font-family: roboto;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 1, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content {
   padding: 50px 0;
 }
 
-/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 4, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content .content-item {
   padding: 50px 0;
 }
 
-/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 8, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered img {
   display: block;
   margin: 25px auto;
   max-width: 300px;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 13, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered p {
   margin: 0 auto;
   max-width: 500px;
   text-align: center;
 }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 1, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header {
   margin: 0;
   padding: 50px 0 0 0;
@@ -49,7 +128,7 @@ body {
   background-size: cover;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 13, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header video {
   position: absolute;
   top: 50%;
@@ -69,7 +148,7 @@ body {
           filter: grayscale(100%);
 }
 
-/* line 32, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 32, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .overlay {
   position: absolute;
   top: 0;
@@ -79,7 +158,7 @@ body {
   /* background-color: rgba(101, 64, 39, 0.4); */
 }
 
-/* line 42, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 42, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar {
   position: fixed;
   top: 0;
@@ -91,40 +170,40 @@ body {
   line-height: 50px;
 }
 
-/* line 53, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 53, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo {
   margin: 5px 0;
   max-height: 40px;
 }
 
-/* line 58, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 58, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav {
   list-style-type: none;
 }
 
-/* line 60, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 60, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item {
   font-size: 18px;
   padding-right: 25px;
 }
 
-/* line 64, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 64, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item a {
   color: #FFF;
 }
 
-/* line 70, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 70, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
 }
 
-/* line 76, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 76, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .horizontal-nav .nav-item a {
   color: #333;
 }
 
-/* line 84, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 84, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .quote {
   width: 460px;
   padding: 180px 0px;
@@ -135,12 +214,12 @@ body {
   text-shadow: 1px 1px 30px #131313;
 }
 
-/* line 93, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 93, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .quote span {
   font-weight: 500;
 }
 
-/* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 2, D:/School/designosource/weareimd/src/scss/components/_form.scss */
 .news-letter input[type="text"] {
   display: block;
   margin: 15px auto;
@@ -152,7 +231,7 @@ body {
   border-bottom: 1px solid #BBBBBB;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 13, D:/School/designosource/weareimd/src/scss/components/_form.scss */
 .news-letter button {
   display: block;
   margin: 0 auto;
@@ -165,7 +244,7 @@ body {
   color: #ABABAB;
 }
 
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 24, D:/School/designosource/weareimd/src/scss/components/_form.scss */
 .news-letter button:focus {
   outline: none;
 }

@@ -1,0 +1,39 @@
+button.designmore {
+	position: relative;
+	width: 175px;
+	background-color: transparent;
+	border: 0px;
+	padding: 0px;
+	background-image: url('../img/more.svg');
+	background-repeat: no-repeat;
+	line-height: 50px;
+}
+button.designmore img {
+	position: absolute;
+	width: 25px;
+	bottom: 0;
+	left: 0;
+	transform: translate(-5px,5.5px);
+	animation:  bolanimate 1s forwards;
+
+
+
+}
+
+
+button.designmore:hover img{
+	width: 35px;
+	transform: translate(-10px,10.5px);
+}
+
+
+@keyframes bolanimate {
+
+     0%   {transform: translate(-5px,5.5pxpx);}
+     25%   {transform: translate(-5px,-40px);}
+     30%   {transform: translate(175px,-40px);}
+     45%   {transform: translate(175px,5.5px);}
+     100% {transform: translate(-5px, 5.5pxpx);}
+    
+
+}
