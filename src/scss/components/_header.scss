@@ -1,13 +1,43 @@
 .page-header {
 	margin: 0;
 	padding: 50px 0 0 0;
-
+	position: relative;
 	width: 100%;
-	height: 80vh;
+	height: 100%;
+	overflow: hidden;
 
-	background-image: url('../img/header.jpg');
+	//background-image: url('../img/header.jpg');
 	background-position: center;
 	background-size: cover;
+
+	video {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+	    z-index: -100;
+	    -ms-transform: translateX(-50%) translateY(-50%);
+	    -moz-transform: translateX(-50%) translateY(-50%);
+	    -webkit-transform: translateX(-50%) translateY(-50%);
+	    transform: translateX(-50%) translateY(-50%);
+	    background: url(polina.jpg) no-repeat;
+	    background-size: cover;
+	    /* filter: blur(3px); */
+	    filter: grayscale(100%);
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+	    /* background-color: rgba(101, 64, 39, 0.4); */
+	}
 
 	.header-bar {
 		position: fixed;
@@ -25,15 +55,43 @@
 			max-height: 40px;
 		}
 
-		.nav {
+		.horizontal-nav {
+			list-style-type: none;
 			.nav-item {
-			    padding-right: 15px;
+				font-size: 18px;
+			    padding-right: 25px;
+
+			    a {
+			    	color: #FFF;
+			    }
 			}
 		}
 
 		&.background {
 			background-color: #FFF;
 			border-color: #F9F9F9;
+
+			.horizontal-nav {
+				.nav-item {
+					a { 
+						color: #333;
+					}
+				}
+			}
 		}
+	}
+
+	.quote {
+	    width: 460px;
+	    padding: 180px 0px;
+	    font-weight: 300;
+	    text-transform: uppercase;
+	    color: #FFF;
+	    font-size: 47px;
+        text-shadow: 1px 1px 30px rgb(19, 19, 19);
+
+	    span {
+	    	font-weight: 500;
+	    }
 	}
 }
