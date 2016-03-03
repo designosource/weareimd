@@ -215,19 +215,20 @@ footer {
   .page-header .header-bar .horizontal-nav .nav-item {
     display: block;
     float: left;
-    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 16px;
   }
-  /* line 163, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  /* line 164, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .header-bar .horizontal-nav .nav-item.mobile {
     display: none;
   }
-  /* line 170, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  /* line 171, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .quote {
     padding: 25vh 0px;
     font-size: 47px;
     line-height: 55px;
   }
-  /* line 176, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  /* line 177, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .quote-author {
     padding: 30vh 0 0 50%;
     text-align: center;
