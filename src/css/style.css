@@ -26,28 +26,34 @@ footer {
 
 /* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content .content-item {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-/* line 7, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content .content-item h3 {
   font-size: 48px;
   font-weight: 300;
 }
 
-/* line 12, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .content-item img {
+  width: 80%;
+}
+
+/* line 17, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered {
   text-align: center;
 }
 
-/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 19, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered img {
   display: block;
   margin: 25px auto;
   max-width: 300px;
 }
 
-/* line 19, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered p {
   margin: 0 auto;
   max-width: 500px;
@@ -59,6 +65,7 @@ footer {
   padding: 50px 0 0 0;
   position: relative;
   width: 100%;
+  min-height: 75vh;
   max-height: 100vh;
   overflow: hidden;
   text-shadow: 1px 1px 30px #131313;
@@ -66,7 +73,7 @@ footer {
   background-size: cover;
 }
 
-/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 15, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header video {
   position: absolute;
   top: 50%;
@@ -86,7 +93,7 @@ footer {
           filter: grayscale(100%);
 }
 
-/* line 33, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .overlay {
   position: absolute;
   top: 0;
@@ -97,7 +104,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 44, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 45, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar {
   position: fixed;
   top: 0;
@@ -109,98 +116,130 @@ footer {
   line-height: 50px;
 }
 
-/* line 55, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 56, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo {
   margin: 10px 0;
   max-height: 30px;
 }
 
-/* line 59, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 60, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo.black {
   display: none;
 }
 
-/* line 63, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 64, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo.white {
   display: block;
 }
 
-/* line 68, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 69, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav {
   list-style-type: none;
+  padding: 0;
+  text-align: right;
 }
 
-/* line 70, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 80, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item {
-  font-size: 18px;
-  padding-right: 35px;
+  font-size: 12px;
+  padding-left: 25px;
 }
 
-/* line 74, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 85, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item a {
   color: #FFF;
 }
 
-/* line 80, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 89, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item.mobile {
+  display: block;
+  color: #FFF;
+  line-height: 50px;
+}
+
+/* line 97, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
   text-shadow: none;
 }
 
-/* line 87, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 104, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .horizontal-nav .nav-item a {
   color: #333;
 }
 
-/* line 94, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 111, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .logo.black {
   display: block;
 }
 
-/* line 98, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 115, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .logo.white {
   display: none;
 }
 
-/* line 105, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 122, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote {
-  width: 460px;
-  padding: 25vh 0px;
+  max-width: 460px;
   font-weight: 300;
   text-transform: uppercase;
   color: #FFF;
-  font-size: 47px;
-  line-height: 55px;
+  font-size: 21px;
+  padding: 20vh 25px 25px;
 }
 
-/* line 114, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 130, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote span {
   font-weight: 500;
   display: block;
 }
 
-/* line 120, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 136, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote-author {
-  text-align: center;
   color: #FFF;
   font-size: 18px;
   line-height: 20px;
-  padding: 30vh 0px;
+  padding: 0 25px;
 }
 
-/* line 127, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 142, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .quote-author span {
   display: block;
   font-weight: 300;
   font-size: 14px;
 }
 
+@media (min-width: 768px) {
+  /* line 158, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  .page-header .header-bar .horizontal-nav .nav-item {
+    display: block;
+    float: left;
+    padding-right: 35px;
+  }
+  /* line 163, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  .page-header .header-bar .horizontal-nav .nav-item.mobile {
+    display: none;
+  }
+  /* line 170, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  .page-header .quote {
+    padding: 25vh 0px;
+    font-size: 47px;
+    line-height: 55px;
+  }
+  /* line 176, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  .page-header .quote-author {
+    padding: 30vh 0 0 50%;
+    text-align: center;
+  }
+}
+
 /* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
 .news-letter input[type="text"] {
   display: block;
   margin: 15px auto;
-  width: 500px;
+  width: 70%;
+  max-width: 500px;
   padding: 5px;
   text-align: center;
   font-size: 18px;
@@ -208,7 +247,7 @@ footer {
   border-bottom: 1px solid #BBBBBB;
 }
 
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
 .news-letter button {
   display: block;
   margin: 0 auto;
@@ -221,7 +260,7 @@ footer {
   color: #ABABAB;
 }
 
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+/* line 25, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
 .news-letter button:focus {
   outline: none;
 }

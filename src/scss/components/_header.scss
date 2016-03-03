@@ -3,6 +3,7 @@
 	padding: 50px 0 0 0;
 	position: relative;
 	width: 100%;
+	min-height: 75vh;
 	max-height: 100vh;
 	overflow: hidden;
 	text-shadow: 1px 1px 30px rgb(19, 19, 19);
@@ -67,12 +68,28 @@
 
 		.horizontal-nav {
 			list-style-type: none;
+			padding: 0;
+			text-align: right;
+
+			// &.open {
+			// 	.nav-item {
+			// 		display: block;
+			// 	}
+			// }
+
 			.nav-item {
-				font-size: 18px;
-			    padding-right: 35px;
+				font-size: 12px;
+		        padding-left:25px;
+				//display: none;
 
 			    a {
 			    	color: #FFF;
+			    }
+
+			    &.mobile {
+			    	display: block;
+			    	color: #FFF;
+		    	    line-height: 50px;
 			    }
 			}
 		}
@@ -103,13 +120,12 @@
 	}
 
 	.quote {
-	    width: 460px;
-	    padding: 25vh 0px;
+	    max-width: 460px;
 	    font-weight: 300;
 	    text-transform: uppercase;
 	    color: #FFF;
-	    font-size: 47px;
-        line-height: 55px;
+	    font-size: 21px;
+        padding: 20vh 25px 25px;
 
 	    span {
 	    	font-weight: 500;
@@ -118,11 +134,10 @@
 	}
 
 	.quote-author {
-		text-align: center;
 		color: #FFF;
 		font-size: 18px;
     	line-height: 20px;
-    	padding: 30vh 0px;
+    	padding: 0 25px;
 		
 		span {
 			display: block;
@@ -133,5 +148,34 @@
 		.quote-char {
 
 	    }
+	}
+}
+
+@media(min-width: 768px) {
+	.page-header {
+		.header-bar {
+			.horizontal-nav {
+				.nav-item {
+					display: block;
+					float: left;
+					padding-right: 35px;
+
+					&.mobile {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.quote {
+			padding: 25vh 0px;
+			font-size: 47px;
+        	line-height: 55px;
+		}
+
+		.quote-author {
+			padding: 30vh 0 0 50%;
+			text-align: center;
+		}
 	}
 }
