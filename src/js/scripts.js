@@ -3,9 +3,9 @@ $(document).on('scroll', function (e) {
     var pageHeaderHeight = $('.page-header').height();
     var headerBarHeight = $('.header-bar').height();
     if((pageHeaderHeight-headerBarHeight) < scrollTop) {
-    	$('.header-bar').css('background-color', '#FFF');
+    	$('.header-bar').addClass('background');
     }
     else {
-    	$('.header-bar').css('background-color', 'transparent');
+    	$('.header-bar').removeClass('background');
     }
 });

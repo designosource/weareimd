@@ -54,7 +54,8 @@ body {
   top: 0;
   z-index: 10;
   background-color: transparent;
-  transition: background-color 0.2s ease-in;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
   width: 100%;
   line-height: 50px;
 }
@@ -62,6 +63,12 @@ body {
 /* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .nav .nav-item {
   padding-right: 15px;
+}
+
+/* line 29, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background {
+  background-color: #FFF;
+  border-color: #F9F9F9;
 }
 
 /* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
