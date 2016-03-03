@@ -92,6 +92,12 @@ body {
   font-family: roboto;
 }
 
+/* line 1, D:/School/designosource/weareimd/src/scss/components/_footer.scss */
+footer {
+  padding: 15px;
+  text-align: center;
+}
+
 /* line 1, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content {
   padding: 50px 0;
@@ -99,21 +105,37 @@ body {
 
 /* line 4, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content .content-item {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* line 8, D:/School/designosource/weareimd/src/scss/components/_content.scss */
+.content .content-item h3 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+/* line 13, D:/School/designosource/weareimd/src/scss/components/_content.scss */
+.content .content-item img {
+  width: 80%;
+}
+
+/* line 17, D:/School/designosource/weareimd/src/scss/components/_content.scss */
+.content .content-item.centered {
+  text-align: center;
+}
+
+/* line 19, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered img {
   display: block;
   margin: 25px auto;
   max-width: 300px;
 }
 
-/* line 13, D:/School/designosource/weareimd/src/scss/components/_content.scss */
+/* line 24, D:/School/designosource/weareimd/src/scss/components/_content.scss */
 .content .content-item.centered p {
   margin: 0 auto;
   max-width: 500px;
-  text-align: center;
 }
 
 /* line 1, D:/School/designosource/weareimd/src/scss/components/_header.scss */
@@ -122,13 +144,15 @@ body {
   padding: 50px 0 0 0;
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 75vh;
+  max-height: 100vh;
   overflow: hidden;
+  text-shadow: 1px 1px 30px #131313;
   background-position: center;
   background-size: cover;
 }
 
-/* line 13, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 15, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header video {
   position: absolute;
   top: 50%;
@@ -148,7 +172,7 @@ body {
           filter: grayscale(100%);
 }
 
-/* line 32, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 34, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .overlay {
   position: absolute;
   top: 0;
@@ -156,9 +180,10 @@ body {
   left: 0;
   right: 0;
   /* background-color: rgba(101, 64, 39, 0.4); */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 42, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 45, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar {
   position: fixed;
   top: 0;
@@ -170,60 +195,131 @@ body {
   line-height: 50px;
 }
 
-/* line 53, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 56, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .logo {
-  margin: 5px 0;
-  max-height: 40px;
-}
-
-/* line 58, D:/School/designosource/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .horizontal-nav {
-  list-style-type: none;
+  margin: 10px 0;
+  max-height: 30px;
 }
 
 /* line 60, D:/School/designosource/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .horizontal-nav .nav-item {
-  font-size: 18px;
-  padding-right: 25px;
+.page-header .header-bar .logo.black {
+  display: none;
 }
 
 /* line 64, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .logo.white {
+  display: block;
+}
+
+/* line 69, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+}
+
+/* line 80, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item {
+  font-size: 12px;
+  padding-left: 25px;
+}
+
+/* line 85, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .horizontal-nav .nav-item a {
   color: #FFF;
 }
 
-/* line 70, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 89, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item.mobile {
+  display: block;
+  color: #FFF;
+  line-height: 50px;
+}
+
+/* line 97, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
+  text-shadow: none;
 }
 
-/* line 76, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 104, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background .horizontal-nav .nav-item a {
   color: #333;
 }
 
-/* line 84, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 111, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .logo.black {
+  display: block;
+}
+
+/* line 115, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .logo.white {
+  display: none;
+}
+
+/* line 122, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .quote {
-  width: 460px;
-  padding: 180px 0px;
+  max-width: 460px;
   font-weight: 300;
   text-transform: uppercase;
   color: #FFF;
-  font-size: 47px;
-  text-shadow: 1px 1px 30px #131313;
+  font-size: 21px;
+  padding: 20vh 25px 25px;
 }
 
-/* line 93, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+/* line 130, D:/School/designosource/weareimd/src/scss/components/_header.scss */
 .page-header .quote span {
   font-weight: 500;
+  display: block;
+}
+
+/* line 136, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .quote-author {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0 25px;
+}
+
+/* line 142, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+.page-header .quote-author span {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  /* line 158, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+  .page-header .header-bar .horizontal-nav .nav-item {
+    display: block;
+    float: left;
+    padding-left: 35px;
+    font-size: 16px;
+  }
+  /* line 164, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+  .page-header .header-bar .horizontal-nav .nav-item.mobile {
+    display: none;
+  }
+  /* line 171, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+  .page-header .quote {
+    padding: 25vh 0px;
+    font-size: 47px;
+    line-height: 55px;
+  }
+  /* line 177, D:/School/designosource/weareimd/src/scss/components/_header.scss */
+  .page-header .quote-author {
+    padding: 30vh 0 0 50%;
+    text-align: center;
+  }
 }
 
 /* line 2, D:/School/designosource/weareimd/src/scss/components/_form.scss */
 .news-letter input[type="text"] {
   display: block;
   margin: 15px auto;
-  width: 500px;
+  width: 70%;
+  max-width: 500px;
   padding: 5px;
   text-align: center;
   font-size: 18px;
@@ -231,7 +327,7 @@ body {
   border-bottom: 1px solid #BBBBBB;
 }
 
-/* line 13, D:/School/designosource/weareimd/src/scss/components/_form.scss */
+/* line 14, D:/School/designosource/weareimd/src/scss/components/_form.scss */
 .news-letter button {
   display: block;
   margin: 0 auto;
@@ -244,7 +340,41 @@ body {
   color: #ABABAB;
 }
 
-/* line 24, D:/School/designosource/weareimd/src/scss/components/_form.scss */
+/* line 25, D:/School/designosource/weareimd/src/scss/components/_form.scss */
 .news-letter button:focus {
   outline: none;
+}
+
+/* line 3, D:/School/designosource/weareimd/src/scss/components/_b-content.scss */
+.content .content-item {
+  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  background-color: red;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 3, D:/School/designosource/weareimd/src/scss/components/_b-content.scss */
+  .content .content-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* line 18, D:/School/designosource/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_img img {
+  text-align: center;
+  width: 50%;
+}
+
+/* line 24, D:/School/designosource/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_text {
+  font-weight: 300;
+}
+
+/* line 27, D:/School/designosource/weareimd/src/scss/components/_b-content.scss */
+.content .content-item .content-item_text .content-item_text--title {
+  padding-top: 4%;
 }
