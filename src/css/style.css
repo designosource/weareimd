@@ -40,7 +40,7 @@ body {
 /* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header {
   margin: 0;
-  padding: 0;
+  padding: 50px 0 0 0;
   width: 100%;
   height: 80vh;
   background-image: url("../img/header.jpg");
@@ -60,12 +60,18 @@ body {
   line-height: 50px;
 }
 
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 23, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .logo {
+  margin: 5px 0;
+  max-height: 40px;
+}
+
+/* line 29, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar .nav .nav-item {
   padding-right: 15px;
 }
 
-/* line 29, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header .header-bar.background {
   background-color: #FFF;
   border-color: #F9F9F9;
