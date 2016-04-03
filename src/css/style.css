@@ -1,65 +1,38 @@
 /* Vars */
 /* animations */
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/animations/_my-first-animation.scss */
 .trololo {
-  display: none;
-}
+  display: none; }
 
 /* components */
-/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_main.scss */
 body {
   font-size: 16px;
   font-weight: 500;
-  font-family: roboto;
-}
+  font-family: roboto; }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_footer.scss */
 footer {
   padding: 15px;
-  text-align: center;
-}
+  text-align: center; }
 
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content {
-  padding: 50px 0;
-}
+  padding: 50px 0; }
+  .content .content-item {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .content .content-item h3 {
+      font-size: 48px;
+      font-weight: 300; }
+    .content .content-item img {
+      width: 80%; }
+    .content .content-item.centered {
+      text-align: center; }
+      .content .content-item.centered img {
+        display: block;
+        margin: 25px auto;
+        max-width: 300px; }
+      .content .content-item.centered p {
+        margin: 0 auto;
+        max-width: 500px; }
 
-/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
-.content .content-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
-.content .content-item h3 {
-  font-size: 48px;
-  font-weight: 300;
-}
-
-/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
-.content .content-item img {
-  width: 80%;
-}
-
-/* line 17, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
-.content .content-item.centered {
-  text-align: center;
-}
-
-/* line 19, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
-.content .content-item.centered img {
-  display: block;
-  margin: 25px auto;
-  max-width: 300px;
-}
-
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
-.content .content-item.centered p {
-  margin: 0 auto;
-  max-width: 500px;
-}
-
-/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header {
   margin: 0;
   padding: 50px 0 0 0;
@@ -70,172 +43,106 @@ footer {
   overflow: hidden;
   text-shadow: 1px 1px 30px #131313;
   background-position: center;
-  background-size: cover;
-}
-
-/* line 15, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
-  /* filter: blur(3px); */
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* background-color: rgba(101, 64, 39, 0.4); */
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* line 45, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  background-color: transparent;
-  border-bottom: 1px solid transparent;
-  transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
-  width: 100%;
-  line-height: 50px;
-}
-
-/* line 56, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .logo {
-  margin: 10px 0;
-  max-height: 30px;
-}
-
-/* line 60, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .logo.black {
-  display: none;
-}
-
-/* line 64, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .logo.white {
-  display: block;
-}
-
-/* line 69, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .horizontal-nav {
-  list-style-type: none;
-  padding: 0;
-  text-align: right;
-}
-
-/* line 80, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .horizontal-nav .nav-item {
-  font-size: 12px;
-  padding-left: 25px;
-}
-
-/* line 85, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .horizontal-nav .nav-item a {
-  color: #FFF;
-}
-
-/* line 89, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar .horizontal-nav .nav-item.mobile {
-  display: block;
-  color: #FFF;
-  line-height: 50px;
-}
-
-/* line 97, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar.background {
-  background-color: #FFF;
-  border-color: #F9F9F9;
-  text-shadow: none;
-}
-
-/* line 104, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar.background .horizontal-nav .nav-item a {
-  color: #333;
-}
-
-/* line 111, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar.background .logo.black {
-  display: block;
-}
-
-/* line 115, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .header-bar.background .logo.white {
-  display: none;
-}
-
-/* line 122, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .quote {
-  max-width: 460px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #FFF;
-  font-size: 21px;
-  padding: 20vh 25px 25px;
-}
-
-/* line 130, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .quote span {
-  font-weight: 500;
-  display: block;
-}
-
-/* line 136, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .quote-author {
-  color: #FFF;
-  font-size: 18px;
-  line-height: 20px;
-  padding: 0 25px;
-}
-
-/* line 142, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-.page-header .quote-author span {
-  display: block;
-  font-weight: 300;
-  font-size: 14px;
-}
+  background-size: cover; }
+  .page-header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+    /* filter: blur(3px); */
+    filter: grayscale(100%); }
+  .page-header .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(101, 64, 39, 0.4); */
+    background-color: rgba(0, 0, 0, 0.4); }
+  .page-header .header-bar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+    width: 100%;
+    line-height: 50px; }
+    .page-header .header-bar .logo {
+      margin: 10px 0;
+      max-height: 30px; }
+      .page-header .header-bar .logo.black {
+        display: none; }
+      .page-header .header-bar .logo.white {
+        display: block; }
+    .page-header .header-bar .horizontal-nav {
+      list-style-type: none;
+      padding: 0;
+      text-align: right; }
+      .page-header .header-bar .horizontal-nav .nav-item {
+        font-size: 12px;
+        padding-left: 25px; }
+        .page-header .header-bar .horizontal-nav .nav-item a {
+          color: #FFF; }
+        .page-header .header-bar .horizontal-nav .nav-item.mobile {
+          display: block;
+          color: #FFF;
+          line-height: 50px; }
+    .page-header .header-bar.background {
+      background-color: #FFF;
+      border-color: #F9F9F9;
+      text-shadow: none; }
+      .page-header .header-bar.background .horizontal-nav .nav-item a {
+        color: #333; }
+      .page-header .header-bar.background .logo.black {
+        display: block; }
+      .page-header .header-bar.background .logo.white {
+        display: none; }
+  .page-header .quote {
+    max-width: 460px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 21px;
+    padding: 20vh 25px 25px; }
+    .page-header .quote span {
+      font-weight: 500;
+      display: block; }
+  .page-header .quote-author {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 25px; }
+    .page-header .quote-author span {
+      display: block;
+      font-weight: 300;
+      font-size: 14px; }
 
 @media (min-width: 768px) {
-  /* line 158, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .header-bar .horizontal-nav .nav-item {
     display: block;
     float: left;
     padding-left: 35px;
-    font-size: 16px;
-  }
-  /* line 164, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
-  .page-header .header-bar .horizontal-nav .nav-item.mobile {
-    display: none;
-  }
-  /* line 171, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+    font-size: 16px; }
+    .page-header .header-bar .horizontal-nav .nav-item.mobile {
+      display: none; }
   .page-header .quote {
     padding: 25vh 0px;
     font-size: 47px;
-    line-height: 55px;
-  }
-  /* line 177, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+    line-height: 55px; }
   .page-header .quote-author {
     padding: 30vh 0 0 50%;
-    text-align: center;
-  }
-}
-
-/* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+    text-align: center; } }
 .news-letter input[type="text"] {
   display: block;
   margin: 15px auto;
@@ -245,10 +152,7 @@ footer {
   text-align: center;
   font-size: 18px;
   border: none;
-  border-bottom: 1px solid #BBBBBB;
-}
-
-/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+  border-bottom: 1px solid #BBBBBB; }
 .news-letter button {
   display: block;
   margin: 0 auto;
@@ -258,44 +162,27 @@ footer {
   border-top: 1px solid #BBBBBB;
   width: 150px;
   font-size: 18px;
-  color: #ABABAB;
-}
+  color: #ABABAB; }
+  .news-letter button:focus {
+    outline: none; }
 
-/* line 25, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
-.news-letter button:focus {
-  outline: none;
-}
-
-/* line 3, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
 .content .content-item {
   margin: 0;
   margin: 0 auto;
   text-align: center;
   display: block;
   overflow: hidden;
-  background-color: red;
-}
+  background-color: red; }
+  @media only screen and (max-width: 320px) {
+    .content .content-item {
+      width: 90%;
+      margin: 0 auto; } }
+  .content .content-item .content-item_img img {
+    text-align: center;
+    width: 50%; }
+  .content .content-item .content-item_text {
+    font-weight: 300; }
+    .content .content-item .content-item_text .content-item_text--title {
+      padding-top: 4%; }
 
-@media only screen and (max-width: 320px) {
-  /* line 3, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
-  .content .content-item {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-/* line 18, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
-.content .content-item .content-item_img img {
-  text-align: center;
-  width: 50%;
-}
-
-/* line 24, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
-.content .content-item .content-item_text {
-  font-weight: 300;
-}
-
-/* line 27, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_b-content.scss */
-.content .content-item .content-item_text .content-item_text--title {
-  padding-top: 4%;
-}
+/*# sourceMappingURL=style.css.map */
