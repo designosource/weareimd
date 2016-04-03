@@ -1,0 +1,61 @@
+.quote{
+	background: url("../img/quote_bckgr.png");
+	position: relative;
+	height: 450px;
+	&_text{
+		color: white;
+		position: absolute;
+		display: block;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		&-content{
+			font-size: 3em;
+			font-weight: 300;
+			line-height: 1.1;
+			b{
+				font-weight: 800;
+			}
+		}
+		&-author{
+			margin-top: 36px;
+			font-size: 1em;
+			line-height: 1;
+			text-align: center;
+			font-weight: 300;
+			b{
+				font-weight: 600;
+			}
+			span{
+				display: block;
+			}
+		}
+	}
+	&_control{
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -25px;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background-color: white;
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			padding: 10px;
+			border-radius: 50%;
+			overflow: hidden;
+			cursor: pointer;
+			box-sizing: border-box;
+			transition: padding 0.2s ease-in-out;
+		}
+		&:hover{
+			img{
+				padding: 5px;
+			}
+		}
+	}
+}

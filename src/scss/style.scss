@@ -1,7 +1,13 @@
 /* Vars */
+$black: #333;
+$red: #E73B35;
+$yellow: #FFD122;
+$blue: #67C6E5;
+$bg: #FDFDFD;
 
 /* animations */
 @import "animations/_my-first-animation.scss";
+@import "animations/_spin.scss";
 
 /* components */
 @import "components/_main.scss";
@@ -9,6 +15,4 @@
 @import "components/_content.scss";
 @import "components/_header.scss";
 @import "components/_form.scss";
-@import "components/_b-content.scss";
-
-
+@import "components/_quote.scss";

@@ -3,6 +3,21 @@
 .trololo {
   display: none; }
 
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 /* components */
 body {
   font-size: 16px;
@@ -14,15 +29,37 @@ footer {
   text-align: center; }
 
 .content {
-  padding: 50px 0; }
+  padding: 50px 0 0 0; }
   .content .content-item {
     padding-top: 50px;
-    padding-bottom: 50px; }
-    .content .content-item h3 {
+    margin: 0 auto;
+    display: block; }
+    .content .content-item .content-item_text h3 {
       font-size: 48px;
-      font-weight: 300; }
-    .content .content-item img {
-      width: 80%; }
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      margin: 0 0 24px 0;
+      position: relative; }
+    .content .content-item .content-item_text hr {
+      width: 25%;
+      margin-left: 0;
+      border: 4px solid transparent; }
+      .content .content-item .content-item_text hr.yellow {
+        border-color: #FFD122; }
+    .content .content-item .content-item_text p {
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      margin: 0 0 12px 0; }
+    .content .content-item .content-item_text .btn {
+      border: 2px solid #FFD122;
+      border-radius: 0px; }
+    .content .content-item .content-item_img img {
+      display: block;
+      width: 75%;
+      margin: 0 auto; }
+      .content .content-item .content-item_img img.community {
+        padding: 50px; }
     .content .content-item.centered {
       text-align: center; }
       .content .content-item.centered img {
@@ -32,6 +69,9 @@ footer {
       .content .content-item.centered p {
         margin: 0 auto;
         max-width: 500px; }
+    @media only screen and (max-width: 320px) {
+      .content .content-item {
+        width: 90%; } }
 
 .page-header {
   margin: 0;
@@ -41,7 +81,6 @@ footer {
   min-height: 75vh;
   max-height: 100vh;
   overflow: hidden;
-  text-shadow: 1px 1px 30px #131313;
   background-position: center;
   background-size: cover; }
   .page-header video {
@@ -77,56 +116,114 @@ footer {
     border-bottom: 1px solid transparent;
     transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
     width: 100%;
-    line-height: 50px; }
+    line-height: 60px;
+    height: 60px;
+    box-sizing: border-box; }
     .page-header .header-bar .logo {
       margin: 10px 0;
-      max-height: 30px; }
+      max-height: 40px;
+      transition: opacity 0.2s ease-in-out;
+      position: absolute; }
       .page-header .header-bar .logo.black {
-        display: none; }
+        opacity: 0;
+        pointer-events: none; }
       .page-header .header-bar .logo.white {
-        display: block; }
+        opacity: 1;
+        pointer-events: all; }
     .page-header .header-bar .horizontal-nav {
       list-style-type: none;
       padding: 0;
       text-align: right; }
       .page-header .header-bar .horizontal-nav .nav-item {
-        font-size: 12px;
         padding-left: 25px; }
         .page-header .header-bar .horizontal-nav .nav-item a {
+          font-size: 18px;
+          font-weight: 300;
           color: #FFF; }
         .page-header .header-bar .horizontal-nav .nav-item.mobile {
           display: block;
           color: #FFF;
           line-height: 50px; }
     .page-header .header-bar.background {
-      background-color: #FFF;
-      border-color: #F9F9F9;
+      background-color: #FDFDFD;
+      border-color: #F0F0F0;
       text-shadow: none; }
       .page-header .header-bar.background .horizontal-nav .nav-item a {
         color: #333; }
       .page-header .header-bar.background .logo.black {
-        display: block; }
+        opacity: 1;
+        pointer-events: all; }
       .page-header .header-bar.background .logo.white {
-        display: none; }
-  .page-header .quote {
-    max-width: 460px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #FFF;
-    font-size: 21px;
-    padding: 20vh 25px 25px; }
-    .page-header .quote span {
-      font-weight: 500;
-      display: block; }
-  .page-header .quote-author {
-    color: #FFF;
-    font-size: 18px;
-    line-height: 20px;
-    padding: 0 25px; }
-    .page-header .quote-author span {
-      display: block;
-      font-weight: 300;
-      font-size: 14px; }
+        opacity: 0;
+        pointer-events: none; }
+  .page-header .call {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    z-index: 20; }
+    .page-header .call h1 {
+      font-size: 3em;
+      margin: 0; }
+      .page-header .call h1 span {
+        display: block;
+        font-weight: 300; }
+      .page-header .call h1 b {
+        display: block;
+        font-weight: 600; }
+    .page-header .call .btn {
+      position: relative;
+      border: 2px solid white;
+      border-radius: 0px;
+      border-style: solid solid none solid;
+      margin-top: 48px;
+      padding: 12px 36px;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; }
+      .page-header .call .btn:hover {
+        background-color: white;
+        color: black; }
+        .page-header .call .btn:hover:before {
+          width: 48%; }
+        .page-header .call .btn:hover:after {
+          width: 48%; }
+        .page-header .call .btn:hover .circle {
+          background-color: #E73B35;
+          border-color: #E73B35; }
+      .page-header .call .btn:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 42.5%;
+        height: 2px;
+        left: -2px;
+        bottom: -1px;
+        background-color: white;
+        transition: width 0.2s ease-in-out; }
+      .page-header .call .btn:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 42.5%;
+        height: 2px;
+        right: -2px;
+        bottom: -1px;
+        background-color: white;
+        transition: width 0.2s ease-in-out; }
+      .page-header .call .btn .circle {
+        display: block;
+        position: absolute;
+        z-index: 25;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -6px;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
 
 @media (min-width: 768px) {
   .page-header .header-bar .horizontal-nav .nav-item {
@@ -166,23 +263,54 @@ footer {
   .news-letter button:focus {
     outline: none; }
 
-.content .content-item {
-  margin: 0;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  background-color: red; }
-  @media only screen and (max-width: 320px) {
-    .content .content-item {
-      width: 90%;
-      margin: 0 auto; } }
-  .content .content-item .content-item_img img {
-    text-align: center;
-    width: 50%; }
-  .content .content-item .content-item_text {
-    font-weight: 300; }
-    .content .content-item .content-item_text .content-item_text--title {
-      padding-top: 4%; }
+.quote {
+  background: url("../img/quote_bckgr.png");
+  position: relative;
+  height: 450px; }
+  .quote_text {
+    color: white;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .quote_text-content {
+      font-size: 3em;
+      font-weight: 300;
+      line-height: 1.1; }
+      .quote_text-content b {
+        font-weight: 800; }
+    .quote_text-author {
+      margin-top: 36px;
+      font-size: 1em;
+      line-height: 1;
+      text-align: center;
+      font-weight: 300; }
+      .quote_text-author b {
+        font-weight: 600; }
+      .quote_text-author span {
+        display: block; }
+  .quote_control {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white; }
+    .quote_control img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: padding 0.2s ease-in-out; }
+    .quote_control:hover img {
+      padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */
