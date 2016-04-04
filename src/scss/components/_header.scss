@@ -6,11 +6,8 @@
 	min-height: 75vh;
 	max-height: 100vh;
 	overflow: hidden;
-
-	//background-image: url('../img/header.jpg');
 	background-position: center;
 	background-size: cover;
-
 	video {
 		position: absolute;
 	    top: 50%;
@@ -87,7 +84,7 @@
 
 			    a {
 					font-size: 18px;
-					font-weight: 300;
+					font-weight: 400;
 			    	color: #FFF;
 			    }
 
@@ -126,6 +123,18 @@
 		}
 	}
 	
+	&.design{
+		min-height: 45vh;
+		.call{
+			h1{
+				font-size: 5em;
+			}
+			b{
+				color: $yellow;
+			}
+		}
+	}
+
 	.call{
 		display: block;
 		position: absolute;
