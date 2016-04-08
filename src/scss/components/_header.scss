@@ -8,6 +8,7 @@
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
+	border-bottom: 0px solid transparent;
 	video {
 		position: absolute;
 	    top: 50%;
@@ -97,7 +98,7 @@
 		}
 
 		&.background {
-			background-color: $bg;
+			background-color: white;
 			border-color: #F0F0F0;
 			text-shadow: none;
 

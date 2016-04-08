@@ -4,7 +4,15 @@ $red: #E73B35;
 $red_50: rgba(231, 59, 53, 0.5);
 $yellow: #FFD122;
 $blue: #67C6E5;
-$bg: #FDFDFD;
+
+$x1: 8px;
+$halfx: $x1/2;
+$x2: $x1*2;
+$x3: $x1*3;
+$x4: $x1*4;
+$x5: $x1*5;
+
+$anim: 0.2s ease-in-out 0s;
 
 /* animations */
 @import "animations/_my-first-animation.scss";
@@ -17,3 +25,4 @@ $bg: #FDFDFD;
 @import "components/_header.scss";
 @import "components/_form.scss";
 @import "components/_quote.scss";
+@import "components/_description.scss";
