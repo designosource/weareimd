@@ -14,6 +14,23 @@ $x5: $x1*5;
 
 $anim: 0.2s ease-in-out 0s;
 
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 /* animations */
 @import "animations/_my-first-animation.scss";
 @import "animations/_spin.scss";
@@ -26,3 +43,4 @@ $anim: 0.2s ease-in-out 0s;
 @import "components/_form.scss";
 @import "components/_quote.scss";
 @import "components/_description.scss";
+@import "components/_gallery.scss";

@@ -1,0 +1,101 @@
+.gallery{
+	.container{
+		text-align: center;
+	}
+	input{
+		display: none;
+		&:checked{
+			& + label{
+				opacity: 1;
+				margin: 0px 25px;
+				width: 50px;
+				height: 50px;
+			}
+		}
+		&#design-filter{
+			&:checked{
+				& ~ .wrapper .tag-design{
+					display: block;
+					&:before{
+						padding-top: 100%;
+						transition: padding-top $anim;
+					}
+				}
+			}
+		}
+		&#development-filter{
+			&:checked{
+				& ~ .wrapper .tag-development{
+					display: block;
+					&:before{
+						padding-top: 100%;
+						transition: padding-top $anim;
+					}
+				}
+			}
+		}
+		&#community-filter{
+			&:checked{
+				& ~ .wrapper .tag-community{
+					display: block;
+					&:before{
+						padding-top: 100%;
+						transition: padding-top $anim;
+					}
+				}
+			}
+		}
+	}
+	label{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		border-radius: 50%;
+		color: transparent;
+		box-sizing: border-box;
+		margin: 10px 35px;
+		opacity: 0.5;
+		transition: width $anim, height $anim, opacity $anim, margin $anim;
+		&[for="design-filter"]{
+			background-color: $yellow;
+		}
+		&[for="development-filter"]{
+			background-color: $blue;
+		}
+		&[for="community-filter"]{
+			background-color: $red;
+		}
+	}
+	.wrapper{
+		margin: $x5*2 0;
+		.item{
+			display: block;
+			overflow: hidden;
+			min-height: 0px;
+			@include aspect-ratio(1, 1);
+			background-color: hotpink;
+			position: relative;
+			color: white;
+			&:before{
+				padding-top: 0%;
+				transition: padding-top 0s linear;
+			}
+			span{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				font-size: $x3;
+			}
+			&.tag-design{
+				background-color: $yellow;
+			}
+			&.tag-development{
+				background-color: $blue;
+			}
+			&.tag-community{
+				background-color: $red;
+			}
+		}
+	}
+}
