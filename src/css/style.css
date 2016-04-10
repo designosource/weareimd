@@ -43,11 +43,12 @@ footer {
   .content h1 {
     margin-top: 0; }
   .content .card {
-    padding: 40px 24px;
+    padding: 40px 24px 0 24px;
     position: relative;
     margin: 80px 0;
     background-color: gray;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    text-align: center; }
     .content .card .circle {
       width: 50px;
       height: 50px;
@@ -71,12 +72,36 @@ footer {
         left: 0px;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
         transition: background-color 0.2s ease-in-out 0s; }
+    .content .card h1 {
+      text-align: left;
+      font-size: 40px;
+      margin: 0 0 16px 0; }
+    .content .card p {
+      text-align: left;
+      font-size: 16px;
+      margin: 0 0 8px 0; }
+    .content .card .btn {
+      padding: 8px 32px;
+      border-radius: 0px;
+      margin: 16px auto 24px auto;
+      letter-spacing: 0em;
+      font-size: 16px;
+      border: 2px solid white;
+      font-weight: 400;
+      line-height: 1;
+      transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s; }
+      .content .card .btn:hover {
+        background-color: white;
+        color: hotpink;
+        border-color: transparent; }
     .content .card:hover .circle:after {
       background-color: hotpink; }
   .content.design .card {
     background-color: #FFD122; }
     .content.design .card .circle:after {
       border-color: #FFD122; }
+    .content.design .card .btn:hover {
+      color: #FFD122; }
     .content.design .card:hover .circle:after {
       background-color: #FFD122; }
   .content.development .card {
@@ -84,12 +109,16 @@ footer {
     background-color: #67C6E5; }
     .content.development .card .circle:after {
       border-color: #67C6E5; }
+    .content.development .card .btn:hover {
+      color: #67C6E5; }
     .content.development .card:hover .circle:after {
       background-color: #67C6E5; }
   .content.community .card {
     background-color: #E73B35; }
     .content.community .card .circle:after {
       border-color: #E73B35; }
+    .content.community .card .btn:hover {
+      color: #E73B35; }
     .content.community .card:hover .circle:after {
       background-color: #E73B35; }
 
@@ -429,21 +458,14 @@ footer {
     margin: 0px 25px;
     width: 50px;
     height: 50px; }
+  .gallery input:checked ~ .wrapper .empty {
+    display: none; }
   .gallery input#design-filter:checked ~ .wrapper .tag-design {
     display: block; }
-    .gallery input#design-filter:checked ~ .wrapper .tag-design:before {
-      padding-top: 100%;
-      transition: padding-top 0.2s ease-in-out 0s; }
   .gallery input#development-filter:checked ~ .wrapper .tag-development {
     display: block; }
-    .gallery input#development-filter:checked ~ .wrapper .tag-development:before {
-      padding-top: 100%;
-      transition: padding-top 0.2s ease-in-out 0s; }
   .gallery input#community-filter:checked ~ .wrapper .tag-community {
     display: block; }
-    .gallery input#community-filter:checked ~ .wrapper .tag-community:before {
-      padding-top: 100%;
-      transition: padding-top 0.2s ease-in-out 0s; }
 .gallery label {
   width: 30px;
   height: 30px;
@@ -461,11 +483,34 @@ footer {
   .gallery label[for="community-filter"] {
     background-color: #E73B35; }
 .gallery .wrapper {
-  margin: 80px 0; }
-  .gallery .wrapper .item {
+  overflow: hidden;
+  margin: 80px 0;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.06); }
+  .gallery .wrapper:before {
     display: block;
+    content: "";
+    width: 100%;
+    padding-top: 300%; }
+  .gallery .wrapper > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
+  .gallery .wrapper .positioner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .gallery .wrapper .item {
+    display: none;
     overflow: hidden;
     min-height: 0px;
+    padding: 0px;
     position: relative;
     background-color: hotpink;
     position: relative;
@@ -480,21 +525,91 @@ footer {
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0; }
-    .gallery .wrapper .item:before {
-      padding-top: 0%;
-      transition: padding-top 0s linear; }
+      bottom: 0;
+      width: 100%;
+      height: 100%; }
     .gallery .wrapper .item span {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 24px; }
-    .gallery .wrapper .item.tag-design {
+    .gallery .wrapper .item .content img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .gallery .wrapper .item .content .tags {
+      box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+      display: block;
+      line-height: 1;
+      padding: 90% 10%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .gallery .wrapper .item .content .tags > div {
+        width: 16px;
+        height: 16px;
+        margin: 0 4px;
+        background-color: hotpink;
+        display: none;
+        text-align: center;
+        border-radius: 8px; }
+    .gallery .wrapper .item.tag-design .content .tags .yellow {
+      display: inline-block;
       background-color: #FFD122; }
-    .gallery .wrapper .item.tag-development {
+    .gallery .wrapper .item.tag-development .content .tags .blue {
+      display: inline-block;
       background-color: #67C6E5; }
-    .gallery .wrapper .item.tag-community {
+    .gallery .wrapper .item.tag-community .content .tags .red {
+      display: inline-block;
       background-color: #E73B35; }
+  .gallery .wrapper .empty {
+    font-size: 40px;
+    padding: 0 15%;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    color: rgba(0, 0, 0, 0.25); }
+
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .gallery .container .wrapper {
+    position: relative; }
+    .gallery .container .wrapper:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 133.33333%; }
+    .gallery .container .wrapper > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .gallery .container .wrapper {
+    position: relative; }
+    .gallery .container .wrapper:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 75%; }
+    .gallery .container .wrapper > .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%; } }
+/* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=style.css.map */

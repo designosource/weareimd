@@ -6,11 +6,12 @@
 		margin-top: 0;
 	}
 	.card{
-		padding: $x5 $x3;
+		padding: $x5 $x3 0 $x3;
 		position: relative;
 		margin: $x5*2 0;
 		background-color: gray;
 		box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+		text-align: center;
 		.circle{
 			width: 50px;
 			height: 50px;
@@ -36,6 +37,32 @@
 				transition: background-color $anim;
 			}
 		}
+		h1{
+			text-align: left;
+			font-size: $x5;
+			margin: 0 0 $x2 0;
+		}
+		p{
+			text-align: left;
+			font-size: $x2;
+			margin: 0 0 $x1 0;
+		}
+		.btn{
+			padding: $x1 $x4	;
+			border-radius: 0px;
+			margin: $x2 auto $x3 auto;
+			letter-spacing: 0em;
+			font-size: $x2;
+			border: 2px solid white;
+			font-weight: 400;
+			line-height: 1;
+			transition: background-color $anim, color $anim, border-color $anim;
+			&:hover{
+				background-color: white;
+				color: hotpink;
+				border-color: transparent;
+			}
+		}
 		&:hover{
 			.circle{
 				&:after{
@@ -50,6 +77,11 @@
 			.circle{
 				&:after{
 					border-color: $yellow;
+				}
+			}
+			.btn{
+				&:hover{
+					color: $yellow;
 				}
 			}
 			&:hover{
@@ -70,6 +102,11 @@
 					border-color: $blue;
 				}
 			}
+			.btn{
+				&:hover{
+					color: $blue;
+				}
+			}
 			&:hover{
 				.circle{
 					&:after{
@@ -85,6 +122,11 @@
 			.circle{
 				&:after{
 					border-color: $red;
+				}
+			}
+			.btn{
+				&:hover{
+					color: $red;
 				}
 			}
 			&:hover{
