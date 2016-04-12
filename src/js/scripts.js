@@ -2,7 +2,7 @@ $(document).on('scroll', function (e) {
     var scrollTop = $(document).scrollTop();
     var pageHeaderHeight = $('.page-header').height();
     var headerBarHeight = $('.header-bar').height();
-    if((pageHeaderHeight-headerBarHeight) < scrollTop) {
+    if((pageHeaderHeight-headerBarHeight*3) < scrollTop) {
     	$('.header-bar').addClass('background');
     }
     else {
