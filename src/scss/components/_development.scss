@@ -1,25 +1,25 @@
-.design{
+.development{
 	&.detail-page{
 		.description{
 			h2{
-				text-shadow: 5px 5px 0px $yellow;
+				text-shadow: 5px 5px 0px $blue;
 			}
 		}
 		.col-md-8{
 			p{
 				b{
-					color: $yellow;
+					color: $blue;
 				}
 			}
 		}
 		section.container-fluid{
 			&:nth-of-type(odd){
-				background-color: $yellow;
+				background-color: $blue;
 				&:before{
-					border-bottom-color: $yellow;
+					border-bottom-color: $blue;
 				}
 				&:after{
-					border-top-color: $yellow;
+					border-top-color: $blue;
 				}
 			}
 		}
