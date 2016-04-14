@@ -24,7 +24,6 @@
 	    transform: translateX(-50%) translateY(-50%);
 	    background: url(polina.jpg) no-repeat;
 	    background-size: cover;
-	    /* filter: blur(3px); */
 	    filter: grayscale(100%);
 	}
 
@@ -34,8 +33,6 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-
-	    /* background-color: rgba(101, 64, 39, 0.4); */
         background-color: rgba(0, 0, 0, 0.4);
 	}
 
@@ -45,26 +42,28 @@
 		z-index: 1000;
 		background-color: transparent;
 		border-bottom: 1px solid transparent;
-	    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+	    transition: background-color 0.15s ease-in, border-color 0.15s ease-in;
 
 		width: 100%;
 		line-height: 60px;
 		height: 60px;
 		box-sizing: border-box;
+	
+		.logo-wrapper {
+			display: block;
+		}
 
 		.logo {
 			margin: 10px 0;
 			max-height: 40px;
-			transition: opacity 0.2s ease-in-out;
-			position: absolute;
 
 			&.black {
-				opacity: 0;
+				display: none;
 				pointer-events: none;
 			}
 
 			&.white {
-				opacity: 1;
+				display: block;
 				pointer-events: all;
 			}
 		}
@@ -74,12 +73,6 @@
 			padding: 0;
 			text-align: right;
 
-			// &.open {
-			// 	.nav-item {
-			// 		display: block;
-			// 	}
-			// }
-
 			.nav-item {
 		        padding-left:25px;
 
@@ -87,6 +80,13 @@
 					font-size: 18px;
 					font-weight: 400;
 			    	color: #FFF;
+			    	border: 2px solid transparent;
+			    	padding: 5px; 
+
+			    	&:hover {
+			    		text-decoration: none;
+			    		border-color: #FFF;
+			    	}
 			    }
 
 			    &.mobile {
@@ -98,14 +98,31 @@
 		}
 
 		&.background {
-			background-color: white;
+			background-color: #FFF;
 			border-color: #F0F0F0;
 			text-shadow: none;
+	
+			.logo {
+				&.black {
+					display: block;
+					pointer-events: none;
+				}
+
+				&.white {
+					display: none;
+					pointer-events: all;
+				}
+			}
 
 			.horizontal-nav {
 				.nav-item {
 					a { 
-						color: #333;
+						color: $black;
+
+						&:hover {
+				    		text-decoration: none;
+				    		border-color: $black;
+				    	}
 					}
 				}
 			}
@@ -146,7 +163,7 @@
 		color: white;
 		z-index: 20;
 		h1{
-			font-size: 3em;
+			font-size: 5em;
 			margin: 0;
 			span{
 				display: block;

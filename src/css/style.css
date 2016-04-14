@@ -1,127 +1,243 @@
 /* Vars */
 /* animations */
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/animations/_my-first-animation.scss */
 .trololo {
-  display: none; }
+  display: none;
+}
 
-@-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin {
   from {
-    -webkit-transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+  }
   to {
-    -webkit-transform: rotate(360deg); } }
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 @keyframes spin {
   from {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   to {
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /* components */
+/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_main.scss */
 body {
   font-size: 16px;
   font-weight: 400;
-  font-family: roboto; }
+  font-family: roboto;
+}
 
+/* line 11, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_main.scss */
 .cf:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_footer.scss */
 footer {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 300;
   padding: 15px;
   text-align: center;
-  background-color: #333; }
+  background-color: #333;
+}
 
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
 .content {
   color: white;
   box-sizing: border-box;
-  padding: 0; }
-  .content h1 {
-    margin-top: 0; }
-  .content .card {
-    padding: 40px 24px 0 24px;
-    position: relative;
-    margin: 80px 0;
-    background-color: gray;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    text-align: center; }
-    .content .card .circle {
-      width: 50px;
-      height: 50px;
-      background-color: white;
-      border-radius: 50%;
-      position: absolute;
-      top: -25px;
-      left: 50%;
-      transform: translate(-50%);
-      box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3); }
-      .content .card .circle:after {
-        content: "";
-        width: 20px;
-        height: 20px;
-        margin: 15px;
-        background-color: white;
-        border: 2px solid hotpink;
-        border-radius: 50%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.2s ease-in-out 0s; }
-    .content .card h1 {
-      text-align: left;
-      font-size: 40px;
-      margin: 0 0 16px 0; }
-    .content .card p {
-      text-align: left;
-      font-size: 16px;
-      margin: 0 0 8px 0; }
-    .content .card .btn {
-      padding: 8px 32px;
-      border-radius: 0px;
-      margin: 16px auto 24px auto;
-      letter-spacing: 0em;
-      font-size: 16px;
-      border: 2px solid white;
-      font-weight: 400;
-      line-height: 1;
-      transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s; }
-      .content .card .btn:hover {
-        background-color: white;
-        color: hotpink;
-        border-color: transparent; }
-    .content .card:hover .circle:after {
-      background-color: hotpink; }
-  .content.design .card {
-    background-color: #FFD122; }
-    .content.design .card .circle:after {
-      border-color: #FFD122; }
-    .content.design .card .btn:hover {
-      color: #FFD122; }
-    .content.design .card:hover .circle:after {
-      background-color: #FFD122; }
-  .content.development .card {
-    z-index: 1;
-    background-color: #67C6E5; }
-    .content.development .card .circle:after {
-      border-color: #67C6E5; }
-    .content.development .card .btn:hover {
-      color: #67C6E5; }
-    .content.development .card:hover .circle:after {
-      background-color: #67C6E5; }
-  .content.community .card {
-    background-color: #E73B35; }
-    .content.community .card .circle:after {
-      border-color: #E73B35; }
-    .content.community .card .btn:hover {
-      color: #E73B35; }
-    .content.community .card:hover .circle:after {
-      background-color: #E73B35; }
+  padding: 0 24px 24px 24px;
+  text-align: center;
+}
 
+/* line 7, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content h1 {
+  margin-top: 0;
+}
+
+/* line 11, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .btn {
+  padding: 8px 32px;
+  border-radius: 0px;
+  margin: 24px auto 0;
+  letter-spacing: 0em;
+  font-size: 16px;
+  border: 2px solid white;
+  font-weight: 400;
+  line-height: 1;
+  transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+}
+
+/* line 21, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .btn:hover {
+  background-color: white;
+  color: hotpink;
+  border-color: transparent;
+}
+
+/* line 28, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card {
+  padding-top: 40px;
+  position: relative;
+  margin: 80px 0;
+}
+
+/* line 32, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card .circle {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* line 42, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card .circle:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  background-color: white;
+  border: 2px solid hotpink;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+/* line 57, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card h1 {
+  text-align: left;
+  font-size: 40px;
+  margin: 0 0 16px 0;
+}
+
+/* line 62, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card p {
+  text-align: left;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+/* line 69, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card:hover .circle:after {
+  background-color: hotpink;
+}
+
+/* line 78, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.design .card .circle:after {
+  border-color: #FFD122;
+}
+
+/* line 83, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.design .card .btn:hover {
+  color: #FFD122;
+}
+
+/* line 89, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.design .card:hover .circle:after {
+  background-color: #FFD122;
+}
+
+/* line 99, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.development .card .circle:after {
+  border-color: #67C6E5;
+}
+
+/* line 104, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.development .card .btn:hover {
+  color: #67C6E5;
+}
+
+/* line 110, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.development .card:hover .circle:after {
+  background-color: #67C6E5;
+}
+
+/* line 120, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.community .card .circle:after {
+  border-color: #E73B35;
+}
+
+/* line 125, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.community .card .btn:hover {
+  color: #E73B35;
+}
+
+/* line 131, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.community .card:hover .circle:after {
+  background-color: #E73B35;
+}
+
+/* line 140, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content {
+  margin: 80px 0;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* line 144, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content .card {
+  margin: 0;
+}
+
+/* line 148, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.design {
+  background-color: #FFD122;
+}
+
+/* line 152, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.development {
+  z-index: 2;
+  background-color: #67C6E5;
+}
+
+/* line 157, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+.content.community {
+  z-index: 1;
+  background-color: #E73B35;
+}
+
+@media (min-width: 992px) {
+  /* line 165, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+  .table-wrapper {
+    margin: 75px auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 169, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+  .table-wrapper .content {
+    padding-bottom: 100px;
+    width: 33.33333333333333333%;
+    position: relative;
+  }
+  /* line 174, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_content.scss */
+  .table-wrapper .content .btn {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 30px;
+  }
+}
+
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
 .page-header {
   margin: 0;
   padding: 50px 0 0 0;
@@ -132,366 +248,631 @@ footer {
   overflow: hidden;
   background-position: center;
   background-size: cover;
-  border-bottom: 0px solid transparent; }
-  .page-header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-    /* filter: blur(3px); */
-    filter: grayscale(100%); }
-  .page-header .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: rgba(101, 64, 39, 0.4); */
-    background-color: rgba(0, 0, 0, 0.4); }
-  .page-header .header-bar {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: transparent;
-    border-bottom: 1px solid transparent;
-    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
-    width: 100%;
-    line-height: 60px;
-    height: 60px;
-    box-sizing: border-box; }
-    .page-header .header-bar .logo {
-      margin: 10px 0;
-      max-height: 40px;
-      transition: opacity 0.2s ease-in-out;
-      position: absolute; }
-      .page-header .header-bar .logo.black {
-        opacity: 0;
-        pointer-events: none; }
-      .page-header .header-bar .logo.white {
-        opacity: 1;
-        pointer-events: all; }
-    .page-header .header-bar .horizontal-nav {
-      list-style-type: none;
-      padding: 0;
-      text-align: right; }
-      .page-header .header-bar .horizontal-nav .nav-item {
-        padding-left: 25px; }
-        .page-header .header-bar .horizontal-nav .nav-item a {
-          font-size: 18px;
-          font-weight: 400;
-          color: #FFF; }
-        .page-header .header-bar .horizontal-nav .nav-item.mobile {
-          display: block;
-          color: #FFF;
-          line-height: 50px; }
-    .page-header .header-bar.background {
-      background-color: white;
-      border-color: #F0F0F0;
-      text-shadow: none; }
-      .page-header .header-bar.background .horizontal-nav .nav-item a {
-        color: #333; }
-      .page-header .header-bar.background .logo.black {
-        opacity: 1;
-        pointer-events: all; }
-      .page-header .header-bar.background .logo.white {
-        opacity: 0;
-        pointer-events: none; }
-  .page-header.design {
-    min-height: 45vh; }
-    .page-header.design .call h1 {
-      font-size: 5em; }
-    .page-header.design .call b {
-      color: #FFD122; }
-  .page-header .call {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
-    z-index: 20; }
-    .page-header .call h1 {
-      font-size: 3em;
-      margin: 0; }
-      .page-header .call h1 span {
-        display: block;
-        font-weight: 300; }
-      .page-header .call h1 b {
-        display: block;
-        font-weight: 600; }
-    .page-header .call .btn {
-      position: relative;
-      border: 2px solid white;
-      border-radius: 0px;
-      border-style: solid solid none solid;
-      margin-top: 48px;
-      padding: 12px 36px;
-      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; }
-      .page-header .call .btn:hover {
-        background-color: white;
-        color: black; }
-        .page-header .call .btn:hover:before {
-          width: 48%; }
-        .page-header .call .btn:hover:after {
-          width: 48%; }
-        .page-header .call .btn:hover .circle {
-          background-color: #E73B35;
-          border-color: #E73B35; }
-      .page-header .call .btn:before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 42.5%;
-        height: 2px;
-        left: -2px;
-        bottom: -1px;
-        background-color: white;
-        transition: width 0.2s ease-in-out; }
-      .page-header .call .btn:after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 42.5%;
-        height: 2px;
-        right: -2px;
-        bottom: -1px;
-        background-color: white;
-        transition: width 0.2s ease-in-out; }
-      .page-header .call .btn .circle {
-        display: block;
-        position: absolute;
-        z-index: 25;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -6px;
-        border: 2px solid white;
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+  border-bottom: 0px solid transparent;
+}
+
+/* line 12, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/* line 30, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 39, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.15s ease-in, border-color 0.15s ease-in;
+  width: 100%;
+  line-height: 60px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+/* line 52, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .logo-wrapper {
+  display: block;
+}
+
+/* line 56, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .logo {
+  margin: 10px 0;
+  max-height: 40px;
+}
+
+/* line 60, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .logo.black {
+  display: none;
+  pointer-events: none;
+}
+
+/* line 65, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .logo.white {
+  display: block;
+  pointer-events: all;
+}
+
+/* line 71, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+}
+
+/* line 76, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item {
+  padding-left: 25px;
+}
+
+/* line 79, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF;
+  border: 2px solid transparent;
+  padding: 5px;
+}
+
+/* line 86, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item a:hover {
+  text-decoration: none;
+  border-color: #FFF;
+}
+
+/* line 92, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar .horizontal-nav .nav-item.mobile {
+  display: block;
+  color: #FFF;
+  line-height: 50px;
+}
+
+/* line 100, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background {
+  background-color: #FFF;
+  border-color: #F0F0F0;
+  text-shadow: none;
+}
+
+/* line 106, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .logo.black {
+  display: block;
+  pointer-events: none;
+}
+
+/* line 111, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .logo.white {
+  display: none;
+  pointer-events: all;
+}
+
+/* line 119, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .horizontal-nav .nav-item a {
+  color: #333;
+}
+
+/* line 122, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .horizontal-nav .nav-item a:hover {
+  text-decoration: none;
+  border-color: #333;
+}
+
+/* line 131, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .logo.black {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* line 136, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .header-bar.background .logo.white {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* line 144, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header.design {
+  min-height: 45vh;
+}
+
+/* line 147, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header.design .call h1 {
+  font-size: 5em;
+}
+
+/* line 150, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header.design .call b {
+  color: #FFD122;
+}
+
+/* line 156, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  z-index: 20;
+}
+
+/* line 165, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+/* line 168, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call h1 span {
+  display: block;
+  font-weight: 300;
+}
+
+/* line 172, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call h1 b {
+  display: block;
+  font-weight: 600;
+}
+
+/* line 177, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn {
+  position: relative;
+  border: 2px solid white;
+  border-radius: 0px;
+  border-style: solid solid none solid;
+  margin-top: 48px;
+  padding: 12px 36px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* line 185, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* line 188, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn:hover:before {
+  width: 48%;
+}
+
+/* line 191, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn:hover:after {
+  width: 48%;
+}
+
+/* line 194, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn:hover .circle {
+  background-color: #E73B35;
+  border-color: #E73B35;
+}
+
+/* line 199, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 42.5%;
+  height: 2px;
+  left: -2px;
+  bottom: -1px;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+}
+
+/* line 210, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 42.5%;
+  height: 2px;
+  right: -2px;
+  bottom: -1px;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+}
+
+/* line 221, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+.page-header .call .btn .circle {
+  display: block;
+  position: absolute;
+  z-index: 25;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -6px;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
 
 @media (min-width: 768px) {
+  /* line 242, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .header-bar .horizontal-nav .nav-item {
     display: block;
     float: left;
     padding-left: 35px;
-    font-size: 16px; }
-    .page-header .header-bar .horizontal-nav .nav-item.mobile {
-      display: none; }
+    font-size: 16px;
+  }
+  /* line 248, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
+  .page-header .header-bar .horizontal-nav .nav-item.mobile {
+    display: none;
+  }
+  /* line 255, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .quote {
     padding: 25vh 0px;
     font-size: 47px;
-    line-height: 55px; }
+    line-height: 55px;
+  }
+  /* line 261, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_header.scss */
   .page-header .quote-author {
     padding: 30vh 0 0 50%;
-    text-align: center; } }
+    text-align: center;
+  }
+}
+
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
 .news-letter {
   color: #333;
-  font-weight: 400; }
-  .news-letter input {
-    background-color: transparent;
-    border: 0px solid;
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 16px;
-    border-bottom: 2px solid #333; }
-    .news-letter input:placeholder-shown + button {
-      color: grey;
-      pointer-events: none; }
-    .news-letter input:focus + button:before {
-      background-color: #E73B35; }
-    .news-letter input:hover + button:before {
-      background-color: #E73B35; }
-  .news-letter button {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    padding: 16px;
-    background-color: transparent;
-    border: 0px solid; }
-    .news-letter button:before {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 25;
-      background-color: #333;
-      border: 4px solid white;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: background-color 0.2s ease-in-out; }
-    .news-letter button:after {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 50;
-      background-color: white;
-      border-radius: 50%;
-      width: 8px;
-      height: 8px;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: background-color 0.2s ease-in-out; }
-    .news-letter button:hover:before {
-      background-color: #E73B35; }
-    .news-letter button:hover:after {
-      background-color: #E73B35; }
-    .news-letter button:focus:before {
-      background-color: #E73B35; }
-    .news-letter button:focus:after {
-      background-color: #E73B35; }
+  font-weight: 400;
+}
 
+/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter input {
+  background-color: transparent;
+  border: 0px solid;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px;
+  border-bottom: 2px solid #333;
+}
+
+/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter input:placeholder-shown + button {
+  color: grey;
+  pointer-events: none;
+}
+
+/* line 21, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter input:focus + button:before {
+  background-color: #E73B35;
+}
+
+/* line 28, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter input:hover + button:before {
+  background-color: #E73B35;
+}
+
+/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: transparent;
+  border: 0px solid;
+}
+
+/* line 41, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 25;
+  background-color: #333;
+  border: 4px solid white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* line 58, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 50;
+  background-color: white;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* line 75, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:hover:before {
+  background-color: #E73B35;
+}
+
+/* line 78, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:hover:after {
+  background-color: #E73B35;
+}
+
+/* line 83, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:focus:before {
+  background-color: #E73B35;
+}
+
+/* line 86, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_form.scss */
+.news-letter button:focus:after {
+  background-color: #E73B35;
+}
+
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
 .quote {
   background: url("../img/quote_bckgr.png");
   position: relative;
-  height: 450px; }
-  .quote_text {
-    color: white;
-    position: absolute;
-    display: block;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-    .quote_text-content {
-      font-size: 3em;
-      font-weight: 300;
-      line-height: 1.1; }
-      .quote_text-content b {
-        font-weight: 800; }
-    .quote_text-author {
-      margin-top: 36px;
-      font-size: 1em;
-      line-height: 1;
-      text-align: center;
-      font-weight: 300; }
-      .quote_text-author b {
-        font-weight: 600; }
-      .quote_text-author span {
-        display: block; }
-  .quote_control {
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: white; }
-    .quote_control img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      padding: 10px;
-      border-radius: 50%;
-      overflow: hidden;
-      cursor: pointer;
-      box-sizing: border-box;
-      transition: padding 0.2s ease-in-out; }
-    .quote_control:hover img {
-      padding: 5px; }
+  height: 450px;
+}
 
+/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_text {
+  color: white;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 12, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_text-content {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+/* line 16, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_text-content b {
+  font-weight: 800;
+}
+
+/* line 20, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_text-author {
+  margin-top: 36px;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* line 26, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_text-author b {
+  font-weight: 600;
+}
+
+/* line 29, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_text-author span {
+  display: block;
+}
+
+/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_control {
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* line 44, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_control img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: padding 0.2s ease-in-out;
+}
+
+/* line 56, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_quote.scss */
+.quote_control:hover img {
+  padding: 5px;
+}
+
+/* line 1, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
 .description {
   padding: 80px;
-  text-align: center; }
-  .description p {
-    font-size: 32px;
-    font-weight: 300;
-    margin-bottom: 40px; }
-    .description p b {
-      font-weight: 400;
-      color: #E73B35; }
-  .description h2 {
-    font-size: 80px;
-    font-weight: 400;
-    line-height: 1;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-shadow: 5px 5px 0px #E73B35;
-    margin-bottom: 16px; }
-  .description .btn {
-    position: relative;
-    border: 2px solid #333;
-    border-radius: 0px;
-    padding: 16px 40px; }
-    .description .btn .circle {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #333;
-      border: 4px solid white;
-      border-radius: 50%;
-      left: 50%;
-      bottom: -10px;
-      transform: translateX(-50%);
-      transition: background-color 0.2s ease-in-out 0s; }
-      .description .btn .circle:after {
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        top: 2px;
-        left: 2px;
-        background-color: white;
-        border-radius: 50%;
-        transition: background-color 0.2s ease-in-out 0s; }
-    .description .btn:hover .circle {
-      background-color: #E73B35; }
-      .description .btn:hover .circle:after {
-        background-color: #E73B35; }
+  text-align: center;
+}
 
+/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description p {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description p b {
+  font-weight: 400;
+  color: #E73B35;
+}
+
+/* line 13, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description h2 {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 5px 5px 0px #E73B35;
+  margin-bottom: 16px;
+}
+
+/* line 23, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description .btn {
+  position: relative;
+  border: 2px solid #333;
+  border-radius: 0px;
+  padding: 16px 40px;
+}
+
+/* line 28, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description .btn .circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border: 4px solid white;
+  border-radius: 50%;
+  left: 50%;
+  bottom: -10px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+/* line 39, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description .btn .circle:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 2px;
+  left: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out 0s;
+}
+
+/* line 52, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description .btn:hover .circle {
+  background-color: #E73B35;
+}
+
+/* line 54, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+.description .btn:hover .circle:after {
+  background-color: #E73B35;
+}
+
+/* line 62, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
 .design .description h2 {
-  text-shadow: 5px 5px 0px #FFD122; }
+  text-shadow: 5px 5px 0px #FFD122;
+}
+
+/* line 66, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
 .design .description p b {
-  color: #FFD122; }
+  color: #FFD122;
+}
 
 @media only screen and (max-width: 768px) {
+  /* line 73, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
   .description {
-    padding: 80px 0; }
-    .description h2 {
-      font-size: 48px; }
-    .description p {
-      font-size: 24px;
-      padding: 0 40px; }
-
+    padding: 80px 0;
+  }
+  /* line 75, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+  .description h2 {
+    font-size: 48px;
+  }
+  /* line 78, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
+  .description p {
+    font-size: 24px;
+    padding: 0 40px;
+  }
+  /* line 83, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_description.scss */
   .img-responsive {
     max-width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto;
+  }
+}
+
+/* line 2, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
 .gallery .container {
-  text-align: center; }
+  text-align: center;
+}
+
+/* line 5, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
 .gallery input {
-  display: none; }
-  .gallery input:checked + label {
-    opacity: 1;
-    margin: 0px 25px;
-    width: 50px;
-    height: 50px; }
-  .gallery input:checked ~ .wrapper .empty {
-    display: none; }
-  .gallery input#design-filter:checked ~ .wrapper .tag-design {
-    display: block; }
-  .gallery input#development-filter:checked ~ .wrapper .tag-development {
-    display: block; }
-  .gallery input#community-filter:checked ~ .wrapper .tag-community {
-    display: block; }
+  display: none;
+}
+
+/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery input:checked + label {
+  opacity: 1;
+  margin: 0px 25px;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 14, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery input:checked ~ .wrapper .empty {
+  display: none;
+}
+
+/* line 20, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery input#design-filter:checked ~ .wrapper .tag-design {
+  display: block;
+}
+
+/* line 27, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery input#development-filter:checked ~ .wrapper .tag-development {
+  display: block;
+}
+
+/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery input#community-filter:checked ~ .wrapper .tag-community {
+  display: block;
+}
+
+/* line 40, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
 .gallery label {
   width: 30px;
   height: 30px;
@@ -501,254 +882,419 @@ footer {
   box-sizing: border-box;
   margin: 10px 35px;
   opacity: 0.5;
-  transition: width 0.2s ease-in-out 0s, height 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s; }
-  .gallery label[for="design-filter"] {
-    background-color: #FFD122; }
-  .gallery label[for="development-filter"] {
-    background-color: #67C6E5; }
-  .gallery label[for="community-filter"] {
-    background-color: #E73B35; }
+  transition: width 0.2s ease-in-out 0s, height 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s, margin 0.2s ease-in-out 0s;
+}
+
+/* line 50, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery label[for="design-filter"] {
+  background-color: #FFD122;
+}
+
+/* line 53, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery label[for="development-filter"] {
+  background-color: #67C6E5;
+}
+
+/* line 56, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery label[for="community-filter"] {
+  background-color: #E73B35;
+}
+
+/* line 60, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
 .gallery .wrapper {
   overflow: hidden;
   margin: 80px 0;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.06); }
-  .gallery .wrapper:before {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* line 19, stdin */
+.gallery .wrapper:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 300%;
+}
+
+/* line 25, stdin */
+.gallery .wrapper > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 65, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .positioner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 72, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item {
+  display: none;
+  overflow: hidden;
+  min-height: 0px;
+  padding: 0px;
+  position: relative;
+  background-color: hotpink;
+  position: relative;
+  color: white;
+}
+
+/* line 19, stdin */
+.gallery .wrapper .item:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+/* line 25, stdin */
+.gallery .wrapper .item > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 81, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+/* line 89, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item .content img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 95, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item .content .tags {
+  display: block;
+  line-height: 1;
+  padding: 90% 10%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 104, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item .content .tags > div {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  background-color: hotpink;
+  display: none;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* line 118, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item.tag-design .content .tags .yellow {
+  display: inline-block;
+  background-color: #FFD122;
+}
+
+/* line 128, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item.tag-development .content .tags .blue {
+  display: inline-block;
+  background-color: #67C6E5;
+}
+
+/* line 138, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .item.tag-community .content .tags .red {
+  display: inline-block;
+  background-color: #E73B35;
+}
+
+/* line 146, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+.gallery .wrapper .empty {
+  font-size: 40px;
+  padding: 0 15%;
+  display: block;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 158, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+canvas {
+  height: 600px;
+  display: block;
+  width: 600px;
+  max-width: 100%;
+}
+
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* line 174, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+  .gallery .container .wrapper {
+    position: relative;
+  }
+  /* line 19, stdin */
+  .gallery .container .wrapper:before {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 300%; }
-  .gallery .wrapper > .content {
+    padding-top: 133.33333%;
+  }
+  /* line 25, stdin */
+  .gallery .container .wrapper > .content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%; }
-  .gallery .wrapper .positioner {
+    height: 100%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* line 185, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_gallery.scss */
+  .gallery .container .wrapper {
+    position: relative;
+  }
+  /* line 19, stdin */
+  .gallery .container .wrapper:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 75%;
+  }
+  /* line 25, stdin */
+  .gallery .container .wrapper > .content {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%; }
-  .gallery .wrapper .item {
-    display: none;
-    overflow: hidden;
-    min-height: 0px;
-    padding: 0px;
-    position: relative;
-    background-color: hotpink;
-    position: relative;
-    color: white; }
-    .gallery .wrapper .item:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: 100%; }
-    .gallery .wrapper .item > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%; }
-    .gallery .wrapper .item span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 24px; }
-    .gallery .wrapper .item .content img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-    .gallery .wrapper .item .content .tags {
-      display: block;
-      line-height: 1;
-      padding: 90% 10%;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-      .gallery .wrapper .item .content .tags > div {
-        width: 16px;
-        height: 16px;
-        margin: 0 4px;
-        background-color: hotpink;
-        display: none;
-        text-align: center;
-        border-radius: 8px; }
-    .gallery .wrapper .item.tag-design .content .tags .yellow {
-      display: inline-block;
-      background-color: #FFD122; }
-    .gallery .wrapper .item.tag-development .content .tags .blue {
-      display: inline-block;
-      background-color: #67C6E5; }
-    .gallery .wrapper .item.tag-community .content .tags .red {
-      display: inline-block;
-      background-color: #E73B35; }
-  .gallery .wrapper .empty {
-    font-size: 40px;
-    padding: 0 15%;
-    display: block;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    color: rgba(0, 0, 0, 0.25); }
+    height: 100%;
+  }
+}
 
-canvas {
-  height: 600px;
-  display: block;
-  width: 600px;
-  max-width: 100%; }
-
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  .gallery .container .wrapper {
-    position: relative; }
-    .gallery .container .wrapper:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: 133.33333%; }
-    .gallery .container .wrapper > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%; } }
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  .gallery .container .wrapper {
-    position: relative; }
-    .gallery .container .wrapper:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: 75%; }
-    .gallery .container .wrapper > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%; } }
 /* Large Devices, Wide Screens */
+/* line 3, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
 .detail-page .description h2 {
-  text-shadow: 5px 5px 0px grey; }
+  text-shadow: 5px 5px 0px grey;
+}
+
+/* line 8, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
 .detail-page .col-md-4 .card {
   padding-top: 1px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.15);
   position: relative;
   transition: box-shadow 0.2s ease-in-out 0s;
-  background-color: white; }
-  .detail-page .col-md-4 .card:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 100%; }
-  .detail-page .col-md-4 .card > .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%; }
-  .detail-page .col-md-4 .card .content {
-    width: 75%;
-    height: auto;
-    margin: 0 12.5%;
-    top: 50%;
-    transform: translateY(-50%); }
-  .detail-page .col-md-4 .card:hover {
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1); }
+  background-color: white;
+}
+
+/* line 19, stdin */
+.detail-page .col-md-4 .card:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+}
+
+/* line 25, stdin */
+.detail-page .col-md-4 .card > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page .col-md-4 .card .content {
+  width: 75%;
+  height: auto;
+  margin: 0 12.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 22, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page .col-md-4 .card:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* line 28, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
 .detail-page .col-md-8 .card {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: white;
   color: black;
-  padding: 40px 24px; }
-  .detail-page .col-md-8 .card h3 {
-    color: #333;
-    margin: 0 0 16px 0;
-    font-size: 40px;
-    letter-spacing: 0.025em;
-    font-weight: 400; }
-  .detail-page .col-md-8 .card p {
-    font-size: 24px;
-    font-weight: 300; }
-    .detail-page .col-md-8 .card p b {
-      font-weight: 400;
-      color: grey; }
+  padding: 40px 24px;
+}
+
+/* line 34, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page .col-md-8 .card h3 {
+  color: #333;
+  margin: 0 0 16px 0;
+  font-size: 40px;
+  letter-spacing: 0.025em;
+  font-weight: 400;
+}
+
+/* line 41, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page .col-md-8 .card p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* line 44, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page .col-md-8 .card p b {
+  font-weight: 400;
+  color: grey;
+}
+
+/* line 51, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
 .detail-page section.container-fluid {
-  padding: 80px 0;
-  position: relative; }
-  .detail-page section.container-fluid:nth-of-type(odd) {
-    background-color: grey; }
-    .detail-page section.container-fluid:nth-of-type(odd):before {
-      content: "";
-      width: 100%;
-      height: 0px;
-      top: -50px;
-      left: 0;
-      border-left: 100vw solid transparent;
-      border-bottom: 50px solid grey;
-      position: absolute;
-      display: block; }
-    .detail-page section.container-fluid:nth-of-type(odd):after {
-      content: "";
-      width: 100%;
-      height: 0px;
-      bottom: -50px;
-      left: 0;
-      border-right: 100vw solid transparent;
-      border-top: 50px solid grey;
-      position: absolute;
-      display: block; }
+  padding: 160px 0;
+  position: relative;
+}
+
+/* line 54, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page section.container-fluid:nth-of-type(odd) {
+  background-color: grey;
+}
+
+/* line 56, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page section.container-fluid:nth-of-type(odd):before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  top: -50px;
+  left: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 50px solid grey;
+  position: absolute;
+  display: block;
+}
+
+/* line 67, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
+.detail-page section.container-fluid:nth-of-type(odd):after {
+  content: "";
+  width: 100%;
+  height: 0px;
+  bottom: -50px;
+  left: 0;
+  border-right: 100vw solid transparent;
+  border-top: 50px solid grey;
+  position: absolute;
+  display: block;
+}
+
+/* line 80, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_detail.scss */
 .detail-page .gallery {
-  margin-top: 80px; }
+  margin-top: 80px;
+}
 
+/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_design.scss */
 .design.detail-page .description h2 {
-  text-shadow: 5px 5px 0px #FFD122; }
+  text-shadow: 5px 5px 0px #FFD122;
+}
+
+/* line 10, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_design.scss */
 .design.detail-page .col-md-8 p b {
-  color: #FFD122; }
+  color: #FFD122;
+}
+
+/* line 16, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_design.scss */
 .design.detail-page section.container-fluid:nth-of-type(odd) {
-  background-color: #FFD122; }
-  .design.detail-page section.container-fluid:nth-of-type(odd):before {
-    border-bottom-color: #FFD122; }
-  .design.detail-page section.container-fluid:nth-of-type(odd):after {
-    border-top-color: #FFD122; }
+  background-color: #FFD122;
+}
 
+/* line 18, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_design.scss */
+.design.detail-page section.container-fluid:nth-of-type(odd):before {
+  border-bottom-color: #FFD122;
+}
+
+/* line 21, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_design.scss */
+.design.detail-page section.container-fluid:nth-of-type(odd):after {
+  border-top-color: #FFD122;
+}
+
+/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_development.scss */
 .development.detail-page .description h2 {
-  text-shadow: 5px 5px 0px #67C6E5; }
+  text-shadow: 5px 5px 0px #67C6E5;
+}
+
+/* line 10, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_development.scss */
 .development.detail-page .col-md-8 p b {
-  color: #67C6E5; }
+  color: #67C6E5;
+}
+
+/* line 16, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_development.scss */
 .development.detail-page section.container-fluid:nth-of-type(odd) {
-  background-color: #67C6E5; }
-  .development.detail-page section.container-fluid:nth-of-type(odd):before {
-    border-bottom-color: #67C6E5; }
-  .development.detail-page section.container-fluid:nth-of-type(odd):after {
-    border-top-color: #67C6E5; }
+  background-color: #67C6E5;
+}
 
+/* line 18, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_development.scss */
+.development.detail-page section.container-fluid:nth-of-type(odd):before {
+  border-bottom-color: #67C6E5;
+}
+
+/* line 21, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_development.scss */
+.development.detail-page section.container-fluid:nth-of-type(odd):after {
+  border-top-color: #67C6E5;
+}
+
+/* line 4, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_community.scss */
 .community.detail-page .description h2 {
-  text-shadow: 5px 5px 0px #E73B35; }
-.community.detail-page .col-md-8 p b {
-  color: #E73B35; }
-.community.detail-page section.container-fluid:nth-of-type(odd) {
-  background-color: #E73B35; }
-  .community.detail-page section.container-fluid:nth-of-type(odd):before {
-    border-bottom-color: #E73B35; }
-  .community.detail-page section.container-fluid:nth-of-type(odd):after {
-    border-top-color: #E73B35; }
+  text-shadow: 5px 5px 0px #E73B35;
+}
 
-/*# sourceMappingURL=style.css.map */
+/* line 10, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_community.scss */
+.community.detail-page .col-md-8 p b {
+  color: #E73B35;
+}
+
+/* line 16, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_community.scss */
+.community.detail-page section.container-fluid:nth-of-type(odd) {
+  background-color: #E73B35;
+}
+
+/* line 18, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_community.scss */
+.community.detail-page section.container-fluid:nth-of-type(odd):before {
+  border-bottom-color: #E73B35;
+}
+
+/* line 21, C:/Users/jaspd/projects/Designo/weareimd/src/scss/components/_community.scss */
+.community.detail-page section.container-fluid:nth-of-type(odd):after {
+  border-top-color: #E73B35;
+}
