@@ -681,17 +681,17 @@ canvas {
       margin: 0 0 16px 0;
       font-size: 40px;
       letter-spacing: 0.025em;
-      font-weight: 400; }
+      font-weight: 400;
+      color: #333; }
     .detail-page .col-md-8 .card p {
       font-size: 24px;
-      font-weight: 300; }
+      font-weight: 300;
+      color: #333; }
       .detail-page .col-md-8 .card p b {
         font-weight: 400; }
   .detail-page section.container-fluid {
     padding: 80px 0;
     position: relative; }
-    .detail-page section.container-fluid .col-md-8 .card p {
-      color: white; }
     .detail-page section.container-fluid:nth-of-type(odd) {
       background-color: grey; }
       .detail-page section.container-fluid:nth-of-type(odd):before {
@@ -714,6 +714,10 @@ canvas {
         border-top: 50px solid grey;
         position: absolute;
         display: block; }
+      .detail-page section.container-fluid:nth-of-type(odd) .col-md-8 .card h3 {
+        color: white; }
+      .detail-page section.container-fluid:nth-of-type(odd) .col-md-8 .card p {
+        color: white; }
   .detail-page .gallery {
     margin-top: 80px; }
 

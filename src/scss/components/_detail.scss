@@ -33,10 +33,12 @@
 				font-size: $x5;
 				letter-spacing: 0.025em;
 				font-weight: 400;
+				color: $black;
 			}
 			p{
 				font-size: $x3;
 				font-weight: 300;
+				color: $black;
 				b{
 					font-weight: 400;
 				}
@@ -46,13 +48,6 @@
 	section.container-fluid{
 		padding: $x5*2 0;
 		position: relative;
-		.col-md-8{
-			.card{
-				p{
-					color: white;
-				}
-			}
-		}
 		&:nth-of-type(odd){
 			background-color: grey;
 			&:before{
@@ -76,6 +71,16 @@
 				border-top: 50px solid grey;
 				position: absolute;
 				display: block;
+			}
+			.col-md-8{
+				.card{
+					h3{
+						color: white;
+					}
+					p{
+						color: white;
+					}
+				}
 			}
 		}
 	}
