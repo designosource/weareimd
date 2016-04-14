@@ -146,15 +146,16 @@
 		color: white;
 		z-index: 20;
 		h1{
-			font-size: 3em;
+			font-size: 5em;
+			line-height: 1;
 			margin: 0;
 			span{
 				display: block;
-				font-weight: 300;
+				font-weight: 100;
 			}
 			b{
 				display: block;
-				font-weight: 600;
+				font-weight: 400;
 			}
 		}
 		.btn{
