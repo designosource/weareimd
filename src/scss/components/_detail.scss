@@ -19,6 +19,7 @@
 				margin: 0 12.5%;
 				top: 50%;
 				transform: translateY(-50%);
+				box-shadow: none;
 			}
 			&:hover{
 				box-shadow: 0px 0px 16px rgba(0,0,0,0.1);
@@ -79,6 +80,9 @@
 					}
 					p{
 						color: white;
+						b{
+							color: white;
+						}
 					}
 				}
 			}

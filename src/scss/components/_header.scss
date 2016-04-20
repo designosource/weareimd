@@ -73,21 +73,32 @@
 			padding: 0;
 			text-align: right;
 
-			.nav-item {
+			.nav-item{
 		        padding-left:25px;
 
 			    a {
 					font-size: 18px;
 					font-weight: 400;
 			    	color: #FFF;
-			    	border: 2px solid transparent;
-			    	padding: 5px; 
+			    	border-bottom: 2px solid transparent;
+			    	padding: 5px;
+			    	transition: border-bottom-color $anim;
 
 			    	&:hover {
 			    		text-decoration: none;
-			    		border-color: #FFF;
+			    		border-bottom-color: #FFF;
 			    	}
 			    }
+
+			    &.design a:hover{
+		    		border-bottom-color: $yellow;
+		    	}
+		    	&.development a:hover{
+		    		border-bottom-color: $blue;
+		    	}
+		    	&.community a:hover{
+		    		border-bottom-color: $red;
+		    	}
 
 			    &.mobile {
 			    	display: block;
@@ -118,11 +129,6 @@
 				.nav-item {
 					a { 
 						color: $black;
-
-						&:hover {
-				    		text-decoration: none;
-				    		border-color: $black;
-				    	}
 					}
 				}
 			}

@@ -2,6 +2,7 @@
 	color: white;
 	box-sizing: border-box;
 	padding: 0 $x3 $x3 $x3;
+	margin: $x5*2 0;
 	text-align: center;
 
 	h1{
@@ -138,7 +139,7 @@
 }
 
 .content {
-	margin: $x5*2 0;
+	
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
 
 	.card {
