@@ -17,7 +17,7 @@
 		margin: 0;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
-		text-shadow: 5px 5px 0px $red;
+		text-shadow: 0.06em 0.06em 0px $red;
 		margin-bottom: $x2;
 	}
 	.btn{
@@ -55,16 +55,6 @@
 					background-color: $red;
 				}
 			}
-		}
-	}
-}
-.design .description{
-	h2{
-		text-shadow: 5px 5px 0px $yellow;
-	}
-	p{
-		b{
-			color: $yellow;
 		}
 	}
 }
