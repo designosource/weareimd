@@ -11,20 +11,20 @@
 		padding: 16px;
 		border-bottom: 2px solid $black;
 		&:placeholder-shown{
-			& + button{
+			& ~ button{
 				color: grey;
 				pointer-events: none;
 			}
 		}
 		&:focus{
-			& + button{
+			& ~ button{
 				&:before{
 					background-color: $red;
 				}
 			}
 		}
 		&:hover{
-			& + button{
+			& ~ button{
 				&:before{
 					background-color: $red;
 				}

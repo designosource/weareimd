@@ -358,12 +358,12 @@ footer {
     text-align: center;
     padding: 16px;
     border-bottom: 2px solid #333; }
-    .news-letter input:placeholder-shown + button {
+    .news-letter input:placeholder-shown ~ button {
       color: grey;
       pointer-events: none; }
-    .news-letter input:focus + button:before {
+    .news-letter input:focus ~ button:before {
       background-color: #E73B35; }
-    .news-letter input:hover + button:before {
+    .news-letter input:hover ~ button:before {
       background-color: #E73B35; }
   .news-letter button {
     position: relative;
