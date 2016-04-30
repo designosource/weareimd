@@ -129,7 +129,7 @@
 			width: 100%;
 			left: 0;
 			top: -100%;
-			transition: opacity $anim 2s, top 0s linear 2s;
+			transition: opacity $anim 0.1s, top 0s linear 0.1s;
 			padding: 0;
 			.item{
 				display: block;
@@ -250,6 +250,9 @@
 				font-weight: 400;
 			}
 		}
+		a{
+			color: white;
+		}
 		.btn{
 			position: relative;
 			border: 2px solid white;
@@ -338,5 +341,11 @@
 			padding: 30vh 0 0 50%;
 			text-align: center;
 		}
+	}
+}
+
+@media(max-width: 500px){
+	.page-header .call{
+		font-size: 0.6em;
 	}
 }

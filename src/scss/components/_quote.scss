@@ -13,6 +13,7 @@
 			font-size: 3em;
 			font-weight: 300;
 			line-height: 1.1;
+			white-space: nowrap;
 			b{
 				font-weight: 800;
 			}
@@ -31,31 +32,16 @@
 			}
 		}
 	}
-	&_control{
-		display: block;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		top: -25px;
-		height: 50px;
-		width: 50px;
-		border-radius: 50%;
-		background-color: white;
-		img{
-			width: 100%;
-			height: 100%;
-			display: block;
-			padding: 10px;
-			border-radius: 50%;
-			overflow: hidden;
-			cursor: pointer;
-			box-sizing: border-box;
-			transition: padding 0.2s ease-in-out;
-		}
-		&:hover{
-			img{
-				padding: 5px;
-			}
-		}
+}
+
+@media only screen and (max-width: 525px){
+	.quote_text-content{
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 300px){
+	.quote_text-content{
+		font-size: 1.5em;
 	}
 }

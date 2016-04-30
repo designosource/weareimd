@@ -1,13 +1,5 @@
 $(document).on('scroll', function (e) {
-    var scrollTop = $(document).scrollTop();
-    var pageHeaderHeight = $('.page-header').height();
-    var headerBarHeight = $('.header-bar').height();
-    if((pageHeaderHeight-headerBarHeight*3) < scrollTop) {
-    	$('.header-bar').addClass('background');
-    }
-    else {
-    	$('.header-bar').removeClass('background');
-    }
+    headerBackground();
 });
 
 var initDesignCanvas = function initDesignCanvas() {
@@ -23,10 +15,8 @@ var initDesignCanvas = function initDesignCanvas() {
 };
 
 $(document).ready(function() {
-	$("#show-mobile-menu").click(function() {
-		console.log('click');
-		$(".horizontal-nav").toggleClass('open');
-	});
+
+    headerBackground();
 
     initDesignCanvas();
 
@@ -121,4 +111,16 @@ function neonCycle(x){
     setTimeout(function() {
         neonRed();
     }, intervalTime*3);
+}
+
+function headerBackground(){
+    var scrollTop = $(document).scrollTop();
+    var pageHeaderHeight = $('.page-header').height();
+    var headerBarHeight = $('.header-bar').height();
+    if((pageHeaderHeight-headerBarHeight*3) < scrollTop) {
+        $('.header-bar').addClass('background');
+    }
+    else {
+        $('.header-bar').removeClass('background');
+    }
 }
