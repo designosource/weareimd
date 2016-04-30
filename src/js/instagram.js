@@ -79,11 +79,14 @@ $.when(doApiCall('weareimd'), doApiCall('wearedev'), doApiCall('wearedesign')).d
 
   shuffle(results);
 
+  console.log(results[0]);
+
   if((length = results.length) > 0) {
     if(length > 13) { length = 12; }
       for(var i = 0; i < length; i++) {
           var captiontext = results[i].caption.text.substring(0,80);
           $("#instagram").prepend(
+            '<a href="'+results[i].link+'">'+
             '<div class="col-md-3 col-sm-4 col-xs-6 item '+ results[i].customTagName +'">'+
               '<div class="content">'+
                 '<image src="' + results[i].images.standard_resolution.url + '" alt="' + captiontext + '"/>'+
@@ -93,7 +96,8 @@ $.when(doApiCall('weareimd'), doApiCall('wearedev'), doApiCall('wearedesign')).d
                   '<div class="red"></div>'+
                 '</div>'+
               '</div>'+
-            '</div>');
+            '</div>'+
+            '</a>');
       }
   }
 
