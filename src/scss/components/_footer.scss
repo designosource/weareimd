@@ -1,8 +1,7 @@
 footer {
-	color: rgba(255,255,255,0.5);
+	color: lightgray;
 	font-weight: 300;
 	padding: 15px;
-	text-align: center;
 	background-color: $black;
 	a{
 		color: lightgray;
@@ -12,5 +11,16 @@ footer {
 			color: white;
 			text-decoration: none;
 		}
+	}
+	.col-sm-6:first-of-type{
+		text-align: left;
+	}
+	.col-sm-6:last-of-type{
+		text-align: right;
+	}
+	.fa{
+		font-size: 1.5em;
+		padding: 0 $x2;
+		width: $x2;
 	}
 }

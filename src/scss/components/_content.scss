@@ -38,6 +38,8 @@
 			position: absolute;
 			top: -25px;
 			left: 50%;
+			-webkit-transform: translate(-50%);
+			-ms-transform: translate(-50%);
 			transform: translate(-50%);
 			border: 2px solid hotpink;
 			box-sizing: border-box;

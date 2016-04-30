@@ -30,10 +30,9 @@ body {
   clear: both; }
 
 footer {
-  color: rgba(255, 255, 255, 0.5);
+  color: lightgray;
   font-weight: 300;
   padding: 15px;
-  text-align: center;
   background-color: #333; }
   footer a {
     color: lightgray;
@@ -42,6 +41,14 @@ footer {
     footer a:hover {
       color: white;
       text-decoration: none; }
+  footer .col-sm-6:first-of-type {
+    text-align: left; }
+  footer .col-sm-6:last-of-type {
+    text-align: right; }
+  footer .fa {
+    font-size: 1.5em;
+    padding: 0 16px;
+    width: 16px; }
 
 .content {
   color: white;
@@ -77,6 +84,8 @@ footer {
       position: absolute;
       top: -25px;
       left: 50%;
+      -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
       transform: translate(-50%);
       border: 2px solid hotpink;
       box-sizing: border-box; }
@@ -327,6 +336,8 @@ footer {
     position: absolute;
     width: 100%;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
     color: white;
@@ -385,6 +396,8 @@ footer {
         position: absolute;
         z-index: 25;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         bottom: -6px;
         border: 2px solid white;
@@ -451,6 +464,8 @@ footer {
       height: 20px;
       top: 0;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       transition: background-color 0.2s ease-in-out; }
     .news-letter button:after {
@@ -464,6 +479,8 @@ footer {
       height: 8px;
       top: 0;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       transition: background-color 0.2s ease-in-out; }
     .news-letter button:hover:before {
@@ -485,6 +502,8 @@ footer {
     display: block;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     .quote_text-content {
       font-size: 3em;
@@ -543,6 +562,8 @@ footer {
       border-radius: 50%;
       left: 50%;
       bottom: -10px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       transition: background-color 0.2s ease-in-out; }
       .description .btn .circle:after {
@@ -660,6 +681,8 @@ footer {
       position: absolute;
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       font-size: 24px; }
     .gallery .wrapper .item .content {
@@ -668,6 +691,8 @@ footer {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         max-width: 175%;
         max-height: 175%; }
@@ -702,6 +727,8 @@ footer {
     padding: 0 15%;
     display: block;
     position: absolute;
+    -webkit-ransform: translateY(-50%);
+    -ms-ransform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
     color: rgba(0, 0, 0, 0.25); }
@@ -795,6 +822,8 @@ canvas {
       height: auto;
       margin: 0 12.5%;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       box-shadow: none;
       padding: 0px; }
