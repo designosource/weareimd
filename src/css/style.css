@@ -572,6 +572,11 @@ footer {
   .img-responsive {
     max-width: 80%;
     margin: 0 auto; } }
+@media only screen and (max-width: 375px) {
+  .description {
+    padding: 40px 0; }
+    .description h2 {
+      font-size: 32px; } }
 .gallery .container {
   text-align: center; }
 .gallery input {
