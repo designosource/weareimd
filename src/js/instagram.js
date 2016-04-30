@@ -87,7 +87,7 @@ $.when(doApiCall('weareimd'), doApiCall('wearedev'), doApiCall('wearedesign')).d
             '<a href="'+results[i].link+'">'+
             '<div class="col-md-3 col-sm-4 col-xs-6 item '+ results[i].customTagName +'">'+
               '<div class="content">'+
-                '<image src="' + results[i].images.low_resolution.url + '" alt="' + captiontext + '"/>'+
+                '<image src="' + results[i].images.standard_resolution.url + '" alt="' + captiontext + '"/>'+
                 '<div class="tags">'+
                   '<div class="yellow"></div>'+
                   '<div class="blue"></div>'+

@@ -687,7 +687,8 @@ footer {
       font-size: 24px; }
     .gallery .wrapper .item .content {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      transition: opacity 0.2s ease-in-out; }
       .gallery .wrapper .item .content img {
         position: absolute;
         top: 50%;
@@ -713,8 +714,10 @@ footer {
         z-index: 20;
         opacity: 0;
         transition: opacity 0.2s ease-in-out; }
-      .gallery .wrapper .item .content:hover:after {
-        opacity: 1; }
+      .gallery .wrapper .item .content:hover {
+        opacity: 0.75; }
+        .gallery .wrapper .item .content:hover:after {
+          opacity: 1; }
       .gallery .wrapper .item .content .tags {
         display: block;
         line-height: 1;
