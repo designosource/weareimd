@@ -74,6 +74,7 @@
 			list-style-type: none;
 			padding: 0;
 			text-align: right;
+			display: none;
 
 			.nav-item{
 		        padding-left:25px;
@@ -101,12 +102,75 @@
 		    	&.community a:hover{
 		    		border-bottom-color: $red;
 		    	}
+			}
+		}
 
-			    &.mobile {
-			    	display: block;
-			    	color: #FFF;
-		    	    line-height: 50px;
-			    }
+		.mobile[tabindex="1"]{
+			padding: 0 $x3;
+			height: 60px;
+			list-style: none;
+			color: white;
+			font-weight: 400;
+			transition: color $anim;
+			&:focus{
+				+ .vertical-nav{
+					opacity: 1;
+					top: 0;
+					transition: opacity $anim 0s, top 0s linear 0s;
+				}
+			}
+		}
+
+		.vertical-nav{
+			opacity: 0;
+			position: fixed;
+			background-color: rgba(0,0,0,0.5);
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: -100%;
+			transition: opacity $anim 2s, top 0s linear 2s;
+			padding: 0;
+			.item{
+				display: block;
+				width: auto;
+				margin-top: $x2;
+				margin-right: 95px;
+				text-align: right;
+				color: white;
+				line-height: 50px;
+				position: relative;
+				a{
+					text-decoration: none;
+					color: white;
+				}
+				& a:after{
+					content: "";
+					display: block;
+					position: absolute;
+					top: 0;
+					right: -60px;
+					background-color: whitesmoke;
+					width: 50px;
+					height: 50px;
+					border-radius: 25px;
+				}
+				&.design{
+					& a:after{
+						background-color: $yellow;
+					}
+				}
+				&.development{
+					& a:after{
+						background-color: $blue;
+					}
+				}
+				&.community{
+					& a:after{
+						background-color: $red;
+					}
+
+				}
 			}
 		}
 
@@ -145,6 +209,10 @@
 					opacity: 0;
 					pointer-events: none;
 				}
+			}
+
+			.mobile[tabindex="1"]{
+				color: black;
 			}
 		}
 	}
@@ -247,16 +315,16 @@
 	.page-header {
 		.header-bar {
 			.horizontal-nav {
+				display: block;
 				.nav-item {
 					display: block;
 					float: left;
 					padding-left: 35px;
 					font-size: 16px;
-
-					&.mobile {
-						display: none;
-					}
 				}
+			}
+			.mobile{
+				display: none;
 			}
 		}
 

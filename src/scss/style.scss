@@ -12,7 +12,7 @@ $x3: $x1*3;
 $x4: $x1*4;
 $x5: $x1*5;
 
-$anim: 0.2s ease-in-out 0s;
+$anim: 0.2s ease-in-out;
 
 @mixin aspect-ratio($width, $height) {
   position: relative;
