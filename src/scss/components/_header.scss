@@ -113,11 +113,15 @@
 			font-weight: 400;
 			transition: color $anim;
 			&:focus{
+				outline: 0;
 				+ .vertical-nav{
 					opacity: 1;
 					top: 0;
 					transition: opacity $anim 0s, top 0s linear 0s;
 				}
+			}
+			&:active{
+				outline: 0;
 			}
 		}
 

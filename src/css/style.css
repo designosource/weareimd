@@ -250,10 +250,14 @@ footer {
       color: white;
       font-weight: 400;
       transition: color 0.2s ease-in-out; }
-      .page-header .header-bar .mobile[tabindex="1"]:focus + .vertical-nav {
-        opacity: 1;
-        top: 0;
-        transition: opacity 0.2s ease-in-out 0s, top 0s linear 0s; }
+      .page-header .header-bar .mobile[tabindex="1"]:focus {
+        outline: 0; }
+        .page-header .header-bar .mobile[tabindex="1"]:focus + .vertical-nav {
+          opacity: 1;
+          top: 0;
+          transition: opacity 0.2s ease-in-out 0s, top 0s linear 0s; }
+      .page-header .header-bar .mobile[tabindex="1"]:active {
+        outline: 0; }
     .page-header .header-bar .vertical-nav {
       opacity: 0;
       position: fixed;
