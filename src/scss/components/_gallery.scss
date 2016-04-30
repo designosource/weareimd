@@ -100,20 +100,12 @@
 					max-width: 175%;
 					max-height: 175%;
 				}
-				&:before{
-					background-color: rgba(0,0,0,0.5);
-					content: "";
-					display: block;
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					z-index: 10;
-					opacity: 0;
-					transition: opacity $anim;
-				}
 				&:after{
+					background-color: rgba(0,0,0,0.5);
+					width: $x5*2;
+					height: $x5*2;
+					border-radius: $x5;
+					line-height: $x5*1.9;
 					content: "+";
 					position: absolute;
 					display: block;
@@ -126,9 +118,6 @@
 					transition: opacity $anim;
 				}
 				&:hover{
-					&:before{
-						opacity: 1;
-					}
 					&:after{
 						opacity: 1;
 					}
