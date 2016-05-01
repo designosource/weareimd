@@ -150,21 +150,21 @@ footer {
     display: block;
     z-index: 5; }
 
-@media (min-width: 992px) {
+@media (min-width: 361px) {
+  .content {
+    padding: 120px 40px; } }
+@media (min-width: 575px) {
+  .content .card {
+    max-width: 75%; } }
+@media (min-width: 991px) {
   .table-wrapper {
     margin: 40px auto;
     display: flex; }
     .table-wrapper .content {
       width: 33.33333333333333333%;
-      position: relative; } }
-@media (min-width: 361px) {
-  .content {
-    padding: 120px 40px; }
-    .content .card {
-      max-width: 87.5%; } }
-@media (min-width: 480px) {
-  .content .card {
-    max-width: 75%; } }
+      position: relative; }
+      .table-wrapper .content .card {
+        max-width: 100%; } }
 .page-header {
   margin: 0;
   padding: 50px 0 0 0;
