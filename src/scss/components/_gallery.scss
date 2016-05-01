@@ -47,6 +47,7 @@
 		margin: 10px 35px;
 		opacity: 0.5;
 		transition: width $anim, height $anim, opacity $anim, margin $anim;
+		cursor: pointer;
 		&[for="design-filter"]{
 			background-color: $yellow;
 		}
