@@ -84,7 +84,7 @@ $.when(doApiCall('weareimd'), doApiCall('wearedev'), doApiCall('wearedesign')).d
       for(var i = 0; i < length; i++) {
           var captiontext = results[i].caption.text.substring(0,80);
           $("#instagram").prepend(
-            '<a href="'+results[i].link+'">'+
+            '<a href="'+results[i].link+'" target="_blank">'+
             '<div class="col-md-3 col-sm-4 col-xs-6 item '+ results[i].customTagName +'">'+
               '<div class="content">'+
                 '<image src="' + results[i].images.standard_resolution.url + '" alt="' + captiontext + '"/>'+
