@@ -21,7 +21,10 @@ $(document).ready(function() {
 
     $("#mobile-menu").on("click",function(){
         $(this).focus();
-        console.log(this);
+    });
+
+    $("#overlay-menu").on("click",function(){
+        $("#mobile-menu").blur();
     });
     
 });
