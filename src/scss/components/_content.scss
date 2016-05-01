@@ -1,7 +1,7 @@
 .content {
 	color: white;
 	box-sizing: border-box;
-	padding: $x5*3 $x5 $x5*3 $x5;
+	padding: $x5*2 $x5;
 	text-align: center;
 
 	h1{
@@ -28,7 +28,8 @@
 
 	.card{
 		position: relative;
-		margin: $x5*2 0;
+		margin: 0 auto;
+		max-width: 100%;
 		text-align: left;
 		.circle{
 			width: 50px;
@@ -69,13 +70,8 @@
 		}
 	}
 	&.design{
+		background-color: $yellow;
 		.card{
-			.circle{
-				border-color: $yellow;
-				&:after{
-					border-color: $yellow;
-				}
-			}
 			.btn{
 				&:hover{
 					color: $yellow;
@@ -84,13 +80,8 @@
 		}
 	}
 	&.development{
+		background-color: $blue;
 		.card{
-			.circle{
-				border-color: $blue;
-				&:after{
-					border-color: $blue;
-				}
-			}
 			.btn{
 				&:hover{
 					color: $blue;
@@ -99,13 +90,8 @@
 		}
 	}
 	&.community{
+		background-color: $red;
 		.card{
-			.circle{
-				border-color: $red;
-				&:after{
-					border-color: $red;
-				}
-			}
 			.btn{
 				&:hover{
 					color: $red;
@@ -113,26 +99,6 @@
 			}
 		}
 	}
-}
-
-.content {
-	.card {
-		margin: 0 auto;
-		max-width: 75%;
-	}
-
-	&.design {
-		background-color: $yellow;
-	}
-
-	&.development {
-		background-color: $blue;
-	}
-
-	&.community {
-		background-color: $red;
-	}
-
 }
 
 .table-wrapper{
@@ -173,6 +139,23 @@
 		.content {
 			width: 33.33333333333333333%;
 			position: relative;
+		}
+	}
+}
+
+@media(min-width: 361px) {
+	.content{
+		padding: $x5*3 $x5;
+		.card{
+			max-width: 87.5%;
+		}
+	}
+}
+
+@media(min-width: 480px) {
+	.content{
+		.card{
+			max-width: 75%;
 		}
 	}
 }

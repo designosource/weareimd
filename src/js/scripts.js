@@ -32,6 +32,11 @@ $(document).ready(function() {
 
     neonCycle(intervalTime);
     discoCycle(intervalTime);
+
+    $("#mobile-menu").on("click",function(){
+        $(this).focus();
+        console.log(this);
+    });
     
 });
 

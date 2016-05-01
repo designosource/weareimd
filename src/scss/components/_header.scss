@@ -105,7 +105,7 @@
 			}
 		}
 
-		.mobile[tabindex="1"]{
+		#mobile-menu{
 			padding: 0 $x3;
 			height: 60px;
 			list-style: none;
@@ -215,7 +215,7 @@
 				}
 			}
 
-			.mobile[tabindex="1"]{
+			#mobile-menu{
 				color: black;
 			}
 		}
