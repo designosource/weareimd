@@ -2,23 +2,9 @@ $(document).on('scroll', function (e) {
     headerBackground();
 });
 
-var initDesignCanvas = function initDesignCanvas() {
-    canvas = document.getElementById("canvas-design");
-    exportRoot = new lib.w_des();
-
-    stage = new createjs.Stage(canvas);
-    stage.addChild(exportRoot);
-    stage.update();
-
-    createjs.Ticker.setFPS(lib.properties.fps);
-    createjs.Ticker.addEventListener("tick", stage);
-};
-
 $(document).ready(function() {
 
     headerBackground();
-
-    initDesignCanvas();
 
     var intervalTime = 2000;
 
